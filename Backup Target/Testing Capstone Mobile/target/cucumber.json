@@ -1,0 +1,303 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-05T05:46:11.887Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11797578600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Click back on Patient page scenario",
+        "description": "",
+        "id": "patient;click-back-on-patient-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 632334700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 425187300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iAmOnTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1038718900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click the sidebar button",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iClickTheSidebarButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1043878100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click patient sidebar menu",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iClickPatientSidebarMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1152725400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click back button on patient page",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iClickBackButtonOnPatientPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1766739300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on sidebar menu page",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iAmOnSidebarMenuPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Patient",
+    "description": "  As an User\n  I want to see Patient page\n  So that I can see Patient list",
+    "id": "patient",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Patient.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-05T05:46:30.616Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8175910900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Sidebar scenario",
+        "description": "",
+        "id": "sidebar;sidebar-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 366051800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 161964500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.SidebarSteps.iAmOnDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 217143400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click sidebar button",
+            "match": {
+              "location": "project.mobile.steps.SidebarSteps.iClickSidebarButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2833683900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click \"dashboard\" menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dashboard\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.SidebarSteps.iClickMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 216861800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the \"dashboard page\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dashboard page\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.SidebarSteps.iGetThePage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-05T05:46:42.758Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8232151400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Sidebar scenario",
+        "description": "",
+        "id": "sidebar;sidebar-scenario;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 378204300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 187125600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.SidebarSteps.iAmOnDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1502925700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click sidebar button",
+            "match": {
+              "location": "project.mobile.steps.SidebarSteps.iClickSidebarButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1514654800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click \"patient\" menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"patient\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.SidebarSteps.iClickMenu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170101100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the \"patient page\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"patient page\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.SidebarSteps.iGetThePage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Sidebar",
+    "description": "  As an User\n  I want to use sidebar\n  So that I can change page",
+    "id": "sidebar",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Sidebar.feature",
+    "tags": []
+  }
+]
