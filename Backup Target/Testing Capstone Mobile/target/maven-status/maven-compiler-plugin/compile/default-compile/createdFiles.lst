@@ -1,3 +1,4 @@
+project\mobile\pages\LoginPage.class
 project\mobile\driver\AndroidDriverInit.class
 project\mobile\base\BasePageObject.class
 project\mobile\pages\PatientPage.class

@@ -8,7 +8,7 @@ import project.mobile.base.BasePageObject;
 public class DashboardPage extends BasePageObject {
 
     By dashboardPage(){
-        return MobileBy.AccessibilityId("Welcome,");
+        return MobileBy.AccessibilityId("Care Hospital");
     }
 
     By patientPage(){

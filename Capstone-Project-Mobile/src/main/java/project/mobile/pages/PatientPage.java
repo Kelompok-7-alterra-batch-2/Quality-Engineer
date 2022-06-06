@@ -27,7 +27,7 @@ public class PatientPage extends BasePageObject {
     }
 
     By patientBackButton(){
-        return MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button");
+        return MobileBy.AccessibilityId("Tombol kembali");
     }
 
     public void verifyDashboardPageDisplayed(){

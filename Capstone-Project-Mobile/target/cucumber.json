@@ -3,11 +3,133 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-06-05T05:46:11.887Z",
+        "start_timestamp": "2022-06-06T05:07:28.465Z",
         "before": [
           {
             "result": {
-              "duration": 11797578600,
+              "duration": 15611897900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Login scenario",
+        "description": "",
+        "id": "login;login-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 343399400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 931788600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the login page",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4140476400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I input \"test@test.com\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@test.com\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iInputEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4858333100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input \"test12345\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test12345\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1529397300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I tap sign in button",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iTapSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 189266200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I get the \"dashboard page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dashboard page\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iGetThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As an User\n  I want to success login\n  So that I can see my dashboard page",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/1.Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-06T05:07:57.129Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8246161700,
               "status": "passed"
             },
             "match": {
@@ -22,7 +144,7 @@
         "after": [
           {
             "result": {
-              "duration": 632334700,
+              "duration": 392262300,
               "status": "passed"
             },
             "match": {
@@ -35,7 +157,7 @@
         "steps": [
           {
             "result": {
-              "duration": 425187300,
+              "duration": 209000200,
               "status": "passed"
             },
             "line": 7,
@@ -47,7 +169,7 @@
           },
           {
             "result": {
-              "duration": 1038718900,
+              "duration": 1463974900,
               "status": "passed"
             },
             "line": 8,
@@ -59,7 +181,7 @@
           },
           {
             "result": {
-              "duration": 1043878100,
+              "duration": 268704300,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +193,7 @@
           },
           {
             "result": {
-              "duration": 1152725400,
+              "duration": 969805900,
               "status": "passed"
             },
             "line": 10,
@@ -83,7 +205,7 @@
           },
           {
             "result": {
-              "duration": 1766739300,
+              "duration": 1984736800,
               "status": "passed"
             },
             "line": 11,
@@ -100,18 +222,18 @@
     "description": "  As an User\n  I want to see Patient page\n  So that I can see Patient list",
     "id": "patient",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Patient.feature",
+    "uri": "file:src/test/resources/features/2.Patient.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-06-05T05:46:30.616Z",
+        "start_timestamp": "2022-06-06T05:08:10.728Z",
         "before": [
           {
             "result": {
-              "duration": 8175910900,
+              "duration": 9441961100,
               "status": "passed"
             },
             "match": {
@@ -126,7 +248,7 @@
         "after": [
           {
             "result": {
-              "duration": 366051800,
+              "duration": 323216500,
               "status": "passed"
             },
             "match": {
@@ -139,7 +261,7 @@
         "steps": [
           {
             "result": {
-              "duration": 161964500,
+              "duration": 179276400,
               "status": "passed"
             },
             "line": 7,
@@ -151,7 +273,7 @@
           },
           {
             "result": {
-              "duration": 217143400,
+              "duration": 189624000,
               "status": "passed"
             },
             "line": 8,
@@ -163,7 +285,7 @@
           },
           {
             "result": {
-              "duration": 2833683900,
+              "duration": 2377605000,
               "status": "passed"
             },
             "line": 9,
@@ -181,7 +303,7 @@
           },
           {
             "result": {
-              "duration": 216861800,
+              "duration": 226806000,
               "status": "passed"
             },
             "line": 10,
@@ -200,11 +322,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-05T05:46:42.758Z",
+        "start_timestamp": "2022-06-06T05:08:23.578Z",
         "before": [
           {
             "result": {
-              "duration": 8232151400,
+              "duration": 8208589600,
               "status": "passed"
             },
             "match": {
@@ -219,7 +341,7 @@
         "after": [
           {
             "result": {
-              "duration": 378204300,
+              "duration": 340223100,
               "status": "passed"
             },
             "match": {
@@ -232,7 +354,7 @@
         "steps": [
           {
             "result": {
-              "duration": 187125600,
+              "duration": 172114900,
               "status": "passed"
             },
             "line": 7,
@@ -244,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 1502925700,
+              "duration": 1094412200,
               "status": "passed"
             },
             "line": 8,
@@ -256,7 +378,7 @@
           },
           {
             "result": {
-              "duration": 1514654800,
+              "duration": 1046697800,
               "status": "passed"
             },
             "line": 9,
@@ -274,7 +396,7 @@
           },
           {
             "result": {
-              "duration": 170101100,
+              "duration": 166110800,
               "status": "passed"
             },
             "line": 10,
@@ -297,7 +419,7 @@
     "description": "  As an User\n  I want to use sidebar\n  So that I can change page",
     "id": "sidebar",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Sidebar.feature",
+    "uri": "file:src/test/resources/features/3.Sidebar.feature",
     "tags": []
   }
 ]
