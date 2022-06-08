@@ -30,6 +30,14 @@ public class PatientPage extends BasePageObject {
         return MobileBy.AccessibilityId("Tombol kembali");
     }
 
+    By updatePatientDataPage(){
+        return MobileBy.AccessibilityId("Update Patient Data");
+    }
+
+    By backIcon(){
+        return MobileBy.AccessibilityId("Tombol kembali");
+    }
+
     public void verifyDashboardPageDisplayed(){
         Assertions.assertTrue(find(dashboardPage()).isDisplayed());
     }
@@ -51,5 +59,13 @@ public class PatientPage extends BasePageObject {
 
     public void clickPatientBackButton(){
         click(patientBackButton());
+    }
+
+    public void verifyUpdatePatientDataPageDisplayed(){
+        Assertions.assertTrue(find(updatePatientDataPage()).isDisplayed());
+    }
+
+    public void clickBackIcon(){
+        click(backIcon());
     }
 }

@@ -1,10 +1,13 @@
-# Kendala Mobile (6-6-2022)
+# Kendala Mobile (8-6-2022 12:21PM)
 
 Tambahkan _accessibility id_ untuk kolom input email
-![-](./Backup%20Target/Testing%20Capstone%20Mobile/input%20email.png)
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Kendala/input%20email.png)
 
 Tambahkan _accessibility id_ untuk kolom input password
-![-](./Backup%20Target/Testing%20Capstone%20Mobile/input%20password.png)
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Kendala/input%20password.png)
+
+Tambahkan _accessibility id_ untuk icon patient
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Kendala/Icon%20Patient.png)
 
 # Kendala Website (7-6-2022)
 
@@ -33,6 +36,9 @@ Tambahkan _id_ pada Edit Icon
 ![-](./Backup%20Target/Testing%20Capstone%20Website/Kendala/Edit%20icon.png)
 
 # SS Serenity BDD Report Mobile (6-6-2022)
+
+Dashboard Feature
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Dashboard.png)
 
 Patient Feature
 ![-](./Backup%20Target/Testing%20Capstone%20Mobile/Patient%20Feature.png)

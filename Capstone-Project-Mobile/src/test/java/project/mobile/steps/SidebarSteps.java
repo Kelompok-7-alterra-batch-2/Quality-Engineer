@@ -5,9 +5,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import project.mobile.pages.DashboardPage;
+import project.mobile.pages.PatientPage;
 
 public class SidebarSteps {
     DashboardPage dashboardPage = new DashboardPage();
+    PatientPage patientPage = new PatientPage();
+
     @Given("I am on Dashboard page")
     public void iAmOnDashboardPage() {
         dashboardPage.verifyDashboardPageDisplayed();
@@ -38,6 +41,7 @@ public class SidebarSteps {
                 break;
             case "patient page":
                 dashboardPage.verifyPatientPageDisplayed();
+                patientPage.clickPatientBackButton();
                 break;
         }
     }

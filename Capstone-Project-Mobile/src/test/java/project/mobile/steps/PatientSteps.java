@@ -4,20 +4,22 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import project.mobile.pages.DashboardPage;
 import project.mobile.pages.PatientPage;
 
 public class PatientSteps {
 
     PatientPage patientPage = new PatientPage();
+    DashboardPage dashboardPage = new DashboardPage();
 
     @Given("I am on the Dashboard page")
     public void iAmOnTheDashboardPage() {
-        patientPage.verifyDashboardPageDisplayed();
+        dashboardPage.verifyDashboardPageDisplayed();
     }
 
     @When("I click the sidebar button")
     public void iClickTheSidebarButton() {
-        patientPage.clickSidebarButton();
+        dashboardPage.clickSidebarButton();
     }
 
     @And("I click patient sidebar menu")
@@ -30,9 +32,9 @@ public class PatientSteps {
         patientPage.clickPatientBackButton();
     }
 
-    @Then("I am on sidebar menu page")
-    public void iAmOnSidebarMenuPage() {
-        patientPage.verifySidebarDisplayed();
-        patientPage.clickDashboardButton();
+    @Then("I am back to Dashboard page")
+    public void iAmBackToDashboardPage() {
+        dashboardPage.verifyDashboardPageDisplayed();
     }
+
 }

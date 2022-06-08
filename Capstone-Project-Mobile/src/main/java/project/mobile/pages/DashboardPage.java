@@ -19,6 +19,10 @@ public class DashboardPage extends BasePageObject {
         return MobileBy.AccessibilityId("Open navigation menu");
     }
 
+    By patientIcon(){
+        return MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button[2]");
+    }
+
     By dashboardButton(){
         return MobileBy.AccessibilityId("Dashboard");
     }
@@ -45,5 +49,9 @@ public class DashboardPage extends BasePageObject {
 
     public void clickPatientButton(){
         click(patientButton());
+    }
+
+    public void clickPatientIcon(){
+        click(patientIcon());
     }
 }
