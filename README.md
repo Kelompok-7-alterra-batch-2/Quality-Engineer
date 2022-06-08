@@ -41,19 +41,19 @@ Dashboard Feature
 ![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Dashboard.png)
 
 Patient Feature
-![-](./Backup%20Target/Testing%20Capstone%20Mobile/Patient%20Feature.png)
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Patient%20Feature.png)
 
 Sidebar Feature 1
-![-](./Backup%20Target/Testing%20Capstone%20Mobile/Sidebar%20Feature%201.png)
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Sidebar%20Feature%201.png)
 
 Sidebar Feature 2
-![-](./Backup%20Target/Testing%20Capstone%20Mobile/Sidebar%20Feature%202.png)
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Sidebar%20Feature%202.png)
 
 Sign In Feature 1
-![-](./Backup%20Target/Testing%20Capstone%20Mobile/Sign%20In%20Feature%201.png)
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Sign%20In%20Feature%201.png)
 
 Sign In Feature 2
-![-](./Backup%20Target/Testing%20Capstone%20Mobile/Sign%20In%20Feature%202.png)
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Sign%20In%20Feature%202.png)
 
 # SS Serenity BDD Report Website (7-6-2022)
 
