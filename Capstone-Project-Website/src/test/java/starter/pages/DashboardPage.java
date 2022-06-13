@@ -16,6 +16,10 @@ public class DashboardPage extends PageObject {
         return By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div[3]/div/table/tbody/tr[1]/td[7]/button[1]");
     }
 
+    private By patientButton(){
+        return By.xpath("//*[@id=\"root\"]/div/div[1]/div/ul/li[4]/div/div[2]");
+    }
+
     private By cancelButton(){
         return By.xpath("/html/body/div[2]/div[3]/button");
     }
@@ -62,6 +66,12 @@ public class DashboardPage extends PageObject {
     public void clickEditButton(){
         to(editButton());
         $(editButton()).click();
+    }
+
+    @Step
+    public void clickMenuPatientButton(){
+        to(patientButton());
+        $(patientButton()).click();
     }
 
     @Step
