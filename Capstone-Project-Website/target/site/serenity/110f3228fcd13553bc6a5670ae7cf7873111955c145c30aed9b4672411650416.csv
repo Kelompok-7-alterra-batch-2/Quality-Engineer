@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Appointment","Create New Appointment With Registered Patient Scenario","SUCCESS","2022-06-16T17:22:34.3699338+07:00[Asia/Bangkok]","0.0","72.16"
+"Appointment","Create New Appointment With Unregistered Patient Scenario","SUCCESS","2022-06-16T17:23:48.5443727+07:00[Asia/Bangkok]","0.0","30.32"
+"Appointment","Cancel Create New Appointment Scenario","SUCCESS","2022-06-16T17:24:20.49885+07:00[Asia/Bangkok]","0.0","19.35"
+"Appointment","Edit Existing Appointment Data Scenario","SUCCESS","2022-06-16T17:24:40.767001+07:00[Asia/Bangkok]","0.0","18.91"
+"Appointment","Cancel Edit Existing Appointment Data Scenario","SUCCESS","2022-06-16T17:25:01.3088472+07:00[Asia/Bangkok]","0.0","11.58"
+"Appointment","Delete Appointment Data Scenario","SUCCESS","2022-06-16T17:25:16.7617199+07:00[Asia/Bangkok]","0.0","10.65"
+"Appointment","Cancel Delete Appointment Data Scenario","SUCCESS","2022-06-16T17:25:28.1996029+07:00[Asia/Bangkok]","0.0","12.65"

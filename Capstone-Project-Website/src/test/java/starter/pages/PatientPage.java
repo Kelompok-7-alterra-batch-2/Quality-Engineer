@@ -9,27 +9,27 @@ import static net.serenitybdd.screenplay.actions.Scroll.to;
 public class PatientPage extends PageObject {
 
     private By addNewPatientButton(){
-        return By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div[1]/div[1]/button");
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/div[1]/button[1]");
     }
 
     private By editPatientButton(){
-        return By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[4]/td[6]/button[1]");
+        return By.xpath("//tbody/tr[4]/td[6]/button[1]");
     }
 
     private By nameField(){
-        return By.xpath("/html/body/div[2]/div[3]/div[2]/div[1]/div/div/input");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/input[1]");
     }
 
     private By dateOfBirthField(){
-        return By.xpath("/html/body/div[2]/div[3]/div[2]/div[2]/div/div/input");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/input[1]");
     }
 
     private By genderButton(){
-        return By.xpath("/html/body/div[2]/div[3]/div[2]/div[3]/div/label[1]/span[1]/input");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[3]/div[1]/label[1]/span[1]/input[1]");
     }
 
     private By phoneNumberField(){
-        return By.xpath("/html/body/div[2]/div[3]/div[2]/div[4]/div/div/input");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[4]/div[1]/div[1]/input[1]");
     }
 
     private By blodeTypeDropdownButton(){
@@ -37,23 +37,23 @@ public class PatientPage extends PageObject {
     }
 
     private By blodeTypeOptionButton(){
-        return By.xpath("//*[@id=\"menu-blood_type\"]/div[3]/ul/li[5]");
+        return By.xpath("//body/div[@id='menu-blood_type']/div[3]/ul[1]/li[5]");
     }
 
     private By cityField(){
-        return By.xpath("/html/body/div[2]/div[3]/div[2]/div[6]/div/div/input");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[6]/div[1]/div[1]/input[1]");
     }
 
     private By addressField(){
-        return By.xpath("/html/body/div[2]/div[3]/div[2]/div[7]/div/div/input");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[7]/div[1]/div[1]/input[1]");
     }
 
     private By submitButton(){
-        return By.xpath("/html/body/div[2]/div[3]/div[3]/div/button");
+        return By.xpath("//body/div[2]/div[3]/div[3]/div[1]/button[1]");
     }
 
     private By xButton(){
-        return By.xpath("/html/body/div[2]/div[3]/div[1]/button");
+        return By.xpath("//body/div[2]/div[3]/div[1]/button[1]");
     }
 
     private By validateSuccessPatient(){
@@ -61,20 +61,54 @@ public class PatientPage extends PageObject {
     }
 
     private By deletePatientButton(){
-        return By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[6]/td[6]/button[2]");
+        return By.xpath("//tbody/tr[6]/td[6]/button[2]");
     }
 
     private By deleteButton(){
-        return By.xpath("/html/body/div[2]/div[3]/div/button[2]");
+        return By.xpath("//body/div[2]/div[3]/div[1]/button[2]");
     }
 
     private By theDeletePatientButton(){
-        return By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[4]/td[6]/button[2]");
+        return By.xpath("//tbody/tr[4]/td[6]/button[2]");
     }
 
     private By cancelButton(){
-        return By.xpath("/html/body/div[2]/div[3]/div/button[1]");
+        return By.xpath("//body/div[2]/div[3]/div[1]/button[1]");
     }
+
+    private By patientPageTitle(){
+        return By.xpath("//h3[contains(text(),'Patient')]");
+    }
+
+    private By newPatientXButton(){
+        return By.xpath("//body/div[2]/div[3]/div[1]/button[1]");
+    }
+
+    private By searchField(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/input[1]");
+    }
+
+    private By patientName(){
+        return By.xpath("//td[contains(text(),'Afwan Pratama')]");
+    }
+
+    private By searchButton(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/button[1]");
+    }
+
+    private By patientDateOfBirth(){
+        return By.xpath("//tbody/tr[1]/td[3]");
+    }
+
+    private By patientGender(){
+        return By.xpath("//tbody/tr[1]/td[4]");
+    }
+
+    private By patientBloodType(){
+        return By.xpath("//td[contains(text(),'AB')]");
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
 
     @Step
     public void clickAddNewPatientButton(){
@@ -175,4 +209,53 @@ public class PatientPage extends PageObject {
         to(cancelButton());
         $(cancelButton()).click();
     }
+
+    public void patientPageTitleDisplayed(){
+        $(patientPageTitle()).isDisplayed();
+    }
+
+    @Step
+    public void clickNewPatientXButton(){
+        to(newPatientXButton());
+        $(newPatientXButton()).click();
+    }
+
+    public void inputPatientName(){
+        $(searchField()).type("Afwan Pratama");
+    }
+
+    @Step
+    public void clickSearchButton() {
+        to(searchButton());
+        $(searchButton()).click();
+    }
+
+    public void validateSearchByPatientNameDisplayed(){
+        $(patientName()).isDisplayed();
+    }
+
+    public void inputPatientDateOfBirth(){
+        $(searchField()).type("2022-06-15");
+    }
+
+    public void validateSearchByPatientDateOfBirthDisplayed(){
+        $(patientDateOfBirth()).isDisplayed();
+    }
+
+    public void inputPatientGender(){
+        $(searchField()).type("Female");
+    }
+
+    public void validateSearchByPatientGenderDisplayed(){
+        $(patientGender()).isDisplayed();
+    }
+
+    public void inputPatientBloodType(){
+        $(searchField()).type("AB");
+    }
+
+    public void validateSearchByPatientBloodTypeDisplayed(){
+        $(patientBloodType()).isDisplayed();
+    }
 }
+

@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Patient","Create New Patient scenario","SUCCESS","2022-06-13T16:03:13.2009953+07:00[Asia/Bangkok]","0.0","50.33"
+"Appointment","Create New Appointment With Unregistered Patient Scenario","SUCCESS","2022-06-16T17:23:48.5443727+07:00[Asia/Bangkok]","0.0","30.32"
+"Patient","Create New Patient Scenario","SUCCESS","2022-06-16T17:25:42.0231247+07:00[Asia/Bangkok]","0.0","46.91"
+"Patient","Search Patient Based on Patient Blood Type Scenario","SUCCESS","2022-06-16T17:28:51.1830492+07:00[Asia/Bangkok]","0.0","46.74"

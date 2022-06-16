@@ -1,4 +1,8 @@
 starter\pages\DashboardPage.class
 CucumberTestSuite.class
+starter\pages\PatientPage.class
 Utils\General.class
 starter\stepdefinitions\DashboardSteps.class
+starter\stepdefinitions\PatientSteps.class
+starter\pages\AppointmentPage.class
+starter\stepdefinitions\AppointmentSteps.class

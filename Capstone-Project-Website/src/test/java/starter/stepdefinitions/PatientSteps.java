@@ -91,4 +91,58 @@ public class PatientSteps {
     public void iClickCancelButton() {
         patientPage.clickCancelButton();
     }
+
+    @Then("I redirected to patient page")
+    public void iRedirectedToPatientPage() {
+        patientPage.patientPageTitleDisplayed();
+    }
+
+    @Then("I click new patient form x button")
+    public void iClickNewPatientFormXButton() {
+        patientPage.clickNewPatientXButton();
+    }
+
+    @When("I input patient name and click search")
+    public void iInputPatientNameAndClickSearch() {
+        patientPage.inputPatientName();
+        patientPage.clickSearchButton();
+    }
+
+    @Then("I validate search by patient name")
+    public void iValidateSearchByPatientName() {
+        patientPage.validateSearchByPatientNameDisplayed();
+    }
+
+    @When("I input patient date of birth and click search")
+    public void iInputPatientDateOfBirthAndClickSearch() {
+        patientPage.inputPatientDateOfBirth();
+        patientPage.clickSearchButton();
+    }
+
+    @Then("I validate search by patient date of birth")
+    public void iValidateSearchByPatientDateOfBirth() {
+        patientPage.validateSearchByPatientDateOfBirthDisplayed();
+    }
+
+    @When("I input patient gender and click search")
+    public void iInputPatientGenderAndClickSearch() {
+        patientPage.inputPatientGender();
+        patientPage.clickSearchButton();
+    }
+
+    @Then("I validate search by patient gender")
+    public void iValidateSearchByPatientGender() {
+        patientPage.validateSearchByPatientGenderDisplayed();
+    }
+
+    @When("I input patient blood type and click search")
+    public void iInputPatientBloodTypeAndClickSearch() {
+        patientPage.inputPatientBloodType();
+        patientPage.clickSearchButton();
+    }
+
+    @Then("I validate search by patient blood type")
+    public void iValidateSearchByPatientBloodType() {
+        patientPage.validateSearchByPatientBloodTypeDisplayed();
+    }
 }
