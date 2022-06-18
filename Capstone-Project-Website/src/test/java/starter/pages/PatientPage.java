@@ -118,6 +118,7 @@ public class PatientPage extends PageObject {
 
     @Step
     public void clickEditPatientButton(){
+        $(editPatientButton()).waitUntilEnabled();
         to(editPatientButton());
         $(editPatientButton()).click();
     }

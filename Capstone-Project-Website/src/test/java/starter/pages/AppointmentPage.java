@@ -214,6 +214,7 @@ public class AppointmentPage extends PageObject {
 
     @Step
     public void editAppointmentReason(){
+        $(AppointmentReasonField()).click();
         $(AppointmentReasonField()).clear();
         $(AppointmentReasonField()).type("Cant Follow The Damn Train");
     }
@@ -254,6 +255,7 @@ public class AppointmentPage extends PageObject {
 
     @Step
     public void appointmentDeleted(){
+        $(deleteAppointmentButton()).waitUntilNotVisible();
         $(validateAppointmentDeleted()).isDisplayed();
     }
 

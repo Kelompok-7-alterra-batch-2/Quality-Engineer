@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Doctor","Cancel Create New Doctor Scenario","SUCCESS","2022-06-18T17:43:32.5132606+07:00[Asia/Bangkok]","0.0","8.37"
+"Doctor","Cancel Edit Doctor Data Scenario","SUCCESS","2022-06-18T17:43:55.200487+07:00[Asia/Bangkok]","0.0","8.47"
+"Doctor","Delete Doctor Data Scenario","SUCCESS","2022-06-18T17:44:04.4266944+07:00[Asia/Bangkok]","0.0","8.82"
+"Doctor","Cancel Delete Doctor Data Scenario","SUCCESS","2022-06-18T17:44:13.9902933+07:00[Asia/Bangkok]","0.0","8.2"
+"Doctor","Search Doctor Based on Doctor Name Scenario","SUCCESS","2022-06-18T17:44:42.379929+07:00[Asia/Bangkok]","0.0","9.07"
+"Doctor","Search Doctor Based on Doctor Phone Number Scenario","SUCCESS","2022-06-18T17:44:52.214639+07:00[Asia/Bangkok]","0.0","8.67"

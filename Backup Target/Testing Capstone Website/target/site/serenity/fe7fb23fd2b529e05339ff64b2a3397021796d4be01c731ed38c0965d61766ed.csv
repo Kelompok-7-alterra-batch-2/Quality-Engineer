@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Dashboard","Edit scenario","SUCCESS","2022-06-15T15:54:20.2802753+07:00[Asia/Bangkok]","0.0","88.06"
+"Appointment","Edit Existing Appointment Data Scenario","SUCCESS","2022-06-17T18:03:39.9791706+07:00[Asia/Bangkok]","0.0","38.23"
+"Patient","Edit Patient Data Scenario","SUCCESS","2022-06-17T18:07:11.5191217+07:00[Asia/Bangkok]","0.0","72.92"
+"Doctor","Edit Doctor Data Scenario","SUCCESS","2022-06-17T18:10:42.4811505+07:00[Asia/Bangkok]","0.0","9.77"

@@ -3,8 +3,8 @@ Feature: Patient
   As an admin
   I want see patient page
   So that I can add, edit, and delete patient
-#mvn clean verify -Dtags="@DDT"
-  @Create
+#mvn clean verify -Dtags="@CreatePatient"
+  @CreatePatient
   Scenario: Create New Patient Scenario
     Given I am at the dashboard page
     And I click menu patient
@@ -17,7 +17,8 @@ Feature: Patient
     And I click menu patient
     When I click Add New Patient
     Then I click new patient form x button
-
+#mvn clean verify -Dtags="@EditPatient"
+  @EditPatient
   Scenario: Edit Patient Data Scenario
     Given I am at the dashboard page
     And I click menu patient
@@ -30,7 +31,8 @@ Feature: Patient
     And I click menu patient
     When I click Edit Patient button
     Then I click x button
-
+#mvn clean verify -Dtags="@DeletePatient"
+  @DeletePatient
   Scenario: Delete Patient Data Scenario
     Given I am at the dashboard page
     And I click menu patient
@@ -43,6 +45,7 @@ Feature: Patient
     When I click the Delete Patient button
     Then I click Cancel button
 
+  @Search
   Scenario: Search Patient Based on Patient Name Scenario
     Given I am at the dashboard page
     And I click menu patient

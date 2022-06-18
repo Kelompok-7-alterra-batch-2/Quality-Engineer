@@ -1,3 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Appointment","Create New Appointment With Registered Patient Scenario","SUCCESS","2022-06-16T17:22:34.3699338+07:00[Asia/Bangkok]","0.0","72.16"
-"Patient","Create New Patient Scenario","SUCCESS","2022-06-16T17:25:42.0231247+07:00[Asia/Bangkok]","0.0","46.91"
+"Appointment","Create New Appointment With Registered Patient Scenario","SUCCESS","2022-06-17T18:00:46.2895614+07:00[Asia/Bangkok]","0.0","68.71"
+"Patient","Create New Patient Scenario","SUCCESS","2022-06-17T18:05:36.4138404+07:00[Asia/Bangkok]","0.0","28.85"
+"Doctor","Create New Doctor Scenario","SUCCESS","2022-06-17T18:10:12.2656039+07:00[Asia/Bangkok]","0.0","29.43"

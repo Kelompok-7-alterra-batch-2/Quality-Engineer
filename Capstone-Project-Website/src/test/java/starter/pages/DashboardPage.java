@@ -20,6 +20,10 @@ public class DashboardPage extends PageObject {
         return By.xpath("//div[contains(text(),'Patient')]");
     }
 
+    private By doctorButton(){
+        return By.xpath("//div[contains(text(),'Doctor')]");
+    }
+
     private By cancelButton(){
         return By.xpath("//body/div[2]/div[3]/button[1]");
     }
@@ -72,6 +76,12 @@ public class DashboardPage extends PageObject {
     public void clickMenuPatientButton(){
         to(patientButton());
         $(patientButton()).click();
+    }
+
+    @Step
+    public void clickMenuDoctorButton(){
+        to(doctorButton());
+        $(doctorButton()).click();
     }
 
     @Step
