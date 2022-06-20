@@ -71,7 +71,7 @@ public class AppointmentPage extends PageObject {
     }
 
     private By editAppointmentIcon(){
-        return By.xpath("//tbody/tr[2]/td[6]/button[1]");
+        return By.xpath("//body[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/button[1]");
     }
 
     private By editAppointmentSubmitButton(){
@@ -91,7 +91,7 @@ public class AppointmentPage extends PageObject {
     }
 
     private By deleteAppointmentIcon(){
-        return By.xpath("//tbody/tr[2]/td[6]/button[2]");
+        return By.xpath("//body[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/button[2]");
     }
 
     private By deleteAppointmentButton(){
@@ -117,6 +117,52 @@ public class AppointmentPage extends PageObject {
     private By noButton(){
         return By.xpath("//body/div[2]/div[3]/div[2]/button[2]");
     }
+
+    private By filterButton(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]");
+    }
+
+    private By generalMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[3]");
+    }
+
+    private By generalTitle(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1]");
+    }
+
+    private By neurologyMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[4]");
+    }
+
+    private By neurologyTitle(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1]");
+    }
+
+    private By cardiologyMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[5]");
+    }
+
+    private By cardiologyTitle(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1]");
+    }
+
+    private By pediatricMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[6]");
+    }
+
+    private By pediatricTitle(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1]");
+    }
+
+    private By gynecologyMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[7]");
+    }
+
+    private By gynecologyTitle(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1]");
+    }
+
+    /////////////////////////////////////////////////////////////////////////////
 
     @Step
     public void clickMenuAppointmentButton(){
@@ -280,5 +326,71 @@ public class AppointmentPage extends PageObject {
     public void clickNoButton(){
         to(noButton());
         $(noButton()).click();
+    }
+
+    @Step
+    public void clickFilterDropdown(){
+        to(filterButton());
+        $(filterButton()).click();
+    }
+
+    @Step
+    public void clickGeneralMenu(){
+        to(generalMenu());
+        $(generalMenu()).click();
+    }
+
+    @Step
+    public void validateGeneralAppointment(){
+        $(generalTitle()).waitUntilVisible();
+        $(generalTitle()).isDisplayed();
+    }
+
+    @Step
+    public void clickNeurologyMenu(){
+        to(neurologyMenu());
+        $(neurologyMenu()).click();
+    }
+
+    @Step
+    public void validateNeurologyAppointment(){
+        $(neurologyTitle()).waitUntilVisible();
+        $(neurologyTitle()).isDisplayed();
+    }
+
+    @Step
+    public void clickCardiologyMenu(){
+        to(cardiologyMenu());
+        $(cardiologyMenu()).click();
+    }
+
+    @Step
+    public void validateCardiologyAppointment(){
+        $(cardiologyTitle()).waitUntilVisible();
+        $(cardiologyTitle()).isDisplayed();
+    }
+
+    @Step
+    public void clickPediatricMenu(){
+        to(pediatricMenu());
+        $(pediatricMenu()).click();
+    }
+
+    @Step
+    public void validatePediatricAppointment(){
+        $(pediatricTitle()).waitUntilVisible();
+        $(pediatricTitle()).isDisplayed();
+    }
+
+    @Step
+    public void clickGynecologyMenu(){
+        to(gynecologyMenu());
+        $(gynecologyMenu()).click();
+    }
+
+    @Step
+    public void validateGynecologyAppointment(){
+        $(gynecologyTitle()).waitUntilVisible();
+        $(gynecologyTitle()).isDisplayed();
     }
 }

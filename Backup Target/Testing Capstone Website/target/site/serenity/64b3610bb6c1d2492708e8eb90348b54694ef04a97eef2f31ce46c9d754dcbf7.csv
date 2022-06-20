@@ -1,2 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Patient","Create New Patient Scenario","SUCCESS","2022-06-18T17:41:43.2210808+07:00[Asia/Bangkok]","0.0","11.49"
+"Patient","Create New Patient Scenario","SUCCESS","2022-06-20T16:32:20.1751158+07:00[Asia/Bangkok]","0.0","19.83"
+"Patient","Cancel Create New Patient Scenario","SUCCESS","2022-06-20T16:32:45.3137026+07:00[Asia/Bangkok]","0.0","13.09"
+"Patient","Edit Patient Data Scenario","SUCCESS","2022-06-20T16:32:59.4016141+07:00[Asia/Bangkok]","0.0","15.53"
+"Patient","Search Patient Based on Patient Name Scenario","SUCCESS","2022-06-20T16:33:47.2426415+07:00[Asia/Bangkok]","0.0","15.19"

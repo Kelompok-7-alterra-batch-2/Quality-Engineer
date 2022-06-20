@@ -57,7 +57,7 @@ public class DoctorPage extends PageObject {
     }
 
     private By editDoctorButton(){
-        return By.xpath("//tbody/tr[8]/td[5]/button[1]");
+        return By.xpath("//tbody/tr[6]/td[5]/button[1]");
     }
 
     private By validateSuccessEditDoctor(){
@@ -69,7 +69,7 @@ public class DoctorPage extends PageObject {
     }
 
     private By deleteDoctorIcon(){
-        return By.xpath("//tbody/tr[8]/td[5]/button[2]");
+        return By.xpath("//tbody/tr[6]/td[5]/button[2]");
     }
 
     private By deleteDoctorButton(){
@@ -81,7 +81,7 @@ public class DoctorPage extends PageObject {
     }
 
     private By theDeleteDoctorIcon(){
-        return By.xpath("//tbody/tr[7]/td[5]/button[2]");
+        return By.xpath("//tbody/tr[6]/td[5]/button[2]");
     }
 
     private By cancelDeleteDoctorButton(){
@@ -109,7 +109,51 @@ public class DoctorPage extends PageObject {
     }
 
     private By validateDoctorPhoneNumber(){
-        return By.xpath("//td[contains(text(),'023141241')]");
+        return By.xpath("//td[contains(text(),'0213213')]");
+    }
+
+    private By filterButton(){
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]");
+    }
+
+    private By generalMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[3]");
+    }
+
+    private By generalDepartment(){
+        return By.xpath("//td[contains(text(),'general')]");
+    }
+
+    private By neurologyMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[4]");
+    }
+
+    private By neurologyDepartment(){
+        return By.xpath("//td[contains(text(),'neurology')]");
+    }
+
+    private By cardiologyMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[5]");
+    }
+
+    private By cardiologyDepartment(){
+        return By.xpath("//td[contains(text(),'cardiology')]");
+    }
+
+    private By pediatricMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[6]");
+    }
+
+    private By pediatricDepartment(){
+        return By.xpath("//td[contains(text(),'pediatric')]");
+    }
+
+    private By gynecologyMenu(){
+        return By.xpath("//body/div[@id='menu-']/div[3]/ul[1]/li[7]");
+    }
+
+    private By gynecologyDepartment(){
+        return By.xpath("//td[contains(text(),'gynecology')]");
     }
 
     ////////////////////////////////////////////////////////////////////////////
@@ -256,10 +300,71 @@ public class DoctorPage extends PageObject {
     }
 
     public void inputSearchDoctorPhoneNumber(){
-        $(searchField()).type("023141241");
+        $(searchField()).type("0213213");
     }
 
     public void validateDoctorPhoneNumberSearchResult(){
         $(validateDoctorPhoneNumber()).isDisplayed();
+    }
+
+    @Step
+    public void clickFilterDropdown(){
+        to(filterButton());
+        $(filterButton()).click();
+    }
+
+    @Step
+    public void clickGeneralMenu(){
+        to(generalMenu());
+        $(generalMenu()).click();
+    }
+
+    @Step
+    public void validateGeneralDoctor(){
+        $(generalDepartment()).isDisplayed();
+    }
+
+    @Step
+    public void clickNeurologyMenu(){
+        to(neurologyMenu());
+        $(neurologyMenu()).click();
+    }
+
+    @Step
+    public void validateNeurologyDoctor(){
+        $(neurologyDepartment()).isDisplayed();
+    }
+
+    @Step
+    public void clickCardiologyMenu(){
+        to(cardiologyMenu());
+        $(cardiologyMenu()).click();
+    }
+
+    @Step
+    public void validateCardiologyDoctor(){
+        $(cardiologyDepartment()).isDisplayed();
+    }
+
+    @Step
+    public void clickPediatricMenu(){
+        to(pediatricMenu());
+        $(pediatricMenu()).click();
+    }
+
+    @Step
+    public void validatePediatricDoctor(){
+        $(pediatricDepartment()).isDisplayed();
+    }
+
+    @Step
+    public void clickGynecologyMenu(){
+        to(gynecologyMenu());
+        $(gynecologyMenu()).click();
+    }
+
+    @Step
+    public void validateGynecologyDoctor(){
+        $(gynecologyDepartment()).isDisplayed();
     }
 }

@@ -143,4 +143,59 @@ public class DoctorSteps {
     public void iValidateSearchByDoctorPhoneNumber() {
         doctorPage.validateDoctorPhoneNumberSearchResult();
     }
+
+    @When("I click doctor department filter dropdown")
+    public void iClickDoctorDepartmentFilterDropdown() {
+        doctorPage.clickFilterDropdown();
+    }
+
+    @And("I click general menu")
+    public void iClickDoctorGeneral() {
+        doctorPage.clickGeneralMenu();
+    }
+
+    @Then("I validate doctor list only show general department doctor")
+    public void iValidateDoctorListOnlyShowGeneralDepartmentDoctor() {
+        doctorPage.validateGeneralDoctor();
+    }
+
+    @And("I click neurology menu")
+    public void iClickNeurologyMenu() {
+        doctorPage.clickNeurologyMenu();
+    }
+
+    @Then("I validate doctor list only show neurology department doctor")
+    public void iValidateDoctorListOnlyShowNeurologyDepartmentDoctor() {
+        doctorPage.validateNeurologyDoctor();
+    }
+
+    @And("I click cardiology menu")
+    public void iClickCardiologyMenu() {
+        doctorPage.clickCardiologyMenu();
+    }
+
+    @Then("I validate doctor list only show cardiology department doctor")
+    public void iValidateDoctorListOnlyShowCardiologyDepartmentDoctor() {
+        doctorPage.validateCardiologyDoctor();
+    }
+
+    @And("I click pediatric menu")
+    public void iClickPediatricMenu() {
+        doctorPage.clickPediatricMenu();
+    }
+
+    @Then("I validate doctor list only show pediatric department doctor")
+    public void iValidateDoctorListOnlyShowPediatricDepartmentDoctor() {
+        doctorPage.validatePediatricDoctor();
+    }
+
+    @And("I click gynecology menu")
+    public void iClickGynecologyMenu() {
+        doctorPage.clickGynecologyMenu();
+    }
+
+    @Then("I validate doctor list only show gynecology department doctor")
+    public void iValidateDoctorListOnlyShowGynecologyDepartmentDoctor() {
+        doctorPage.validateGynecologyDoctor();
+    }
 }

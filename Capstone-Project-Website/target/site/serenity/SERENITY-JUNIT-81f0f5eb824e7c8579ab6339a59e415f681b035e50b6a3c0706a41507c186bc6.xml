@@ -1,1 +1,39 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Doctor" skipped="0" tests="9" time="94.76" timestamp="2022-06-18 05:43:18"><testcase name="Create New Doctor Scenario"/><testcase name="Cancel Create New Doctor Scenario"/><testcase name="Edit Doctor Data Scenario"/><testcase name="Cancel Edit Doctor Data Scenario"/><testcase name="Delete Doctor Data Scenario"/><testcase name="Cancel Delete Doctor Data Scenario"/><testcase name="Search Doctor Based on Doctor NID Scenario"/><testcase name="Search Doctor Based on Doctor Name Scenario"/><testcase name="Search Doctor Based on Doctor Phone Number Scenario"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Doctor" skipped="0" tests="15" time="139.31" timestamp="2022-06-20 04:34:36"><testcase name="Create New Doctor Scenario"/><testcase name="Cancel Create New Doctor Scenario"/><testcase name="Edit Doctor Data Scenario"/><testcase name="Cancel Edit Doctor Data Scenario"/><testcase name="Cancel Delete Doctor Data Scenario"/><testcase name="Delete Doctor Data Scenario"/><testcase name="Search Doctor Based on Doctor NID Scenario"/><testcase name="Search Doctor Based on Doctor Department"/><testcase name="Search Doctor Based on Doctor Name Scenario"/><testcase name="Search Doctor Based on Doctor Phone Number Scenario"><error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[contains(text(),'023141241')]&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [06a9396faec813ad0ad50ef8d71f9459, findElement {using=xpath, value=//td[contains(text(),'023141241')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 06a9396faec813ad0ad50ef8d71f9459" type="org.openqa.selenium.NoSuchElementException">no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'023141241')]"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06a9396faec813ad0ad50ef8d71f9459, findElement {using=xpath, value=//td[contains(text(),'023141241')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06a9396faec813ad0ad50ef8d71f9459</error><system-err>no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'023141241')]"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06a9396faec813ad0ad50ef8d71f9459, findElement {using=xpath, value=//td[contains(text(),'023141241')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06a9396faec813ad0ad50ef8d71f9459&#13;
+Capstone.Project.Website@1.0-SNAPSHOT/starter.pages.DoctorPage.validateDoctorPhoneNumberSearchResult(DoctorPage.java:307)&#13;
+Capstone.Project.Website@1.0-SNAPSHOT/starter.stepdefinitions.DoctorSteps.iValidateSearchByDoctorPhoneNumber(DoctorSteps.java:144)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:95)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)&#13;
+</system-err></testcase><testcase name="Filter Doctor General Scenario"/><testcase name="Filter Doctor Neurology Scenario"/><testcase name="Filter Doctor Cardiology Scenario"/><testcase name="Filter Doctor Pediatric Scenario"/><testcase name="Filter Doctor Gynecology Scenario"/></testsuite>

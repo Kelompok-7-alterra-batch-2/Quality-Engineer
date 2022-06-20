@@ -13,7 +13,7 @@ public class PatientPage extends PageObject {
     }
 
     private By editPatientButton(){
-        return By.xpath("//tbody/tr[4]/td[6]/button[1]");
+        return By.xpath("//tbody/tr[3]/td[6]/button[1]");
     }
 
     private By nameField(){
@@ -61,7 +61,7 @@ public class PatientPage extends PageObject {
     }
 
     private By deletePatientButton(){
-        return By.xpath("//tbody/tr[6]/td[6]/button[2]");
+        return By.xpath("//tbody/tr[3]/td[6]/button[2]");
     }
 
     private By deleteButton(){
@@ -69,7 +69,7 @@ public class PatientPage extends PageObject {
     }
 
     private By theDeletePatientButton(){
-        return By.xpath("//tbody/tr[4]/td[6]/button[2]");
+        return By.xpath("//tbody/tr[3]/td[6]/button[2]");
     }
 
     private By cancelButton(){

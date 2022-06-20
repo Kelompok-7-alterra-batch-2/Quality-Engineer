@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Doctor","Create New Doctor Scenario","SUCCESS","2022-06-18T17:43:18.8112034+07:00[Asia/Bangkok]","0.0","12.82"
-"Doctor","Edit Doctor Data Scenario","SUCCESS","2022-06-18T17:43:41.6029932+07:00[Asia/Bangkok]","0.0","12.57"
-"Doctor","Search Doctor Based on Doctor NID Scenario","SUCCESS","2022-06-18T17:44:22.9805691+07:00[Asia/Bangkok]","0.0","17.77"
+"Doctor","Create New Doctor Scenario","SUCCESS","2022-06-20T16:34:36.3581646+07:00[Asia/Bangkok]","0.0","15.58"
+"Doctor","Edit Doctor Data Scenario","SUCCESS","2022-06-20T16:35:01.9176203+07:00[Asia/Bangkok]","0.0","10.66"
+"Doctor","Search Doctor Based on Doctor Phone Number Scenario","ERROR","2022-06-20T16:36:11.1630453+07:00[Asia/Bangkok]","0.0","14.46"

@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-06-2022 17:44</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-06-2022 16:36</span>
     <br style="clear:left"/>
 </div>
 
@@ -188,9 +188,9 @@ So that I can add, edit, and delete doctor
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Search Doctor Based on Doctor Phone Number Scenario
+                                <span class="error-color">Search Doctor Based on Doctor Phone Number Scenario
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -207,21 +207,60 @@ So that I can add, edit, and delete doctor
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//td[contains(text(),'023141241')]'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pages.DoctorPage.validateDoctorPhoneNumberSearchResult(DoctorPage.java:307)<br />starter.stepdefinitions.DoctorSteps.iValidateSearchByDoctorPhoneNumber(DoctorSteps.java:144)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource4035667070261442717.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="e0c5e84207325a43cd3ecce9dfeb84335ea726cc8626592e2202371bcb2d6f92.png" title=" Given I am at the dashboard page" width="1024"/>
-                <img src="e0c5e84207325a43cd3ecce9dfeb84335ea726cc8626592e2202371bcb2d6f92.png" title=" Open url" width="1024"/>
-                <img src="e0c5e84207325a43cd3ecce9dfeb84335ea726cc8626592e2202371bcb2d6f92.png" title=" Validate on dashboard page" width="1024"/>
-                <img src="e0c5e84207325a43cd3ecce9dfeb84335ea726cc8626592e2202371bcb2d6f92.png" title=" Validate on dashboard page (completed)" width="1024"/>
-                <img src="e0c5e84207325a43cd3ecce9dfeb84335ea726cc8626592e2202371bcb2d6f92.png" title=" Given I am at the dashboard page (completed)" width="1024"/>
-                <img src="c2a7adb1368e96507210e405c16724f9b1b0d7d7598fc67cb9461980e6e28e15.png" title=" And I click menu doctor" width="1024"/>
-                <img src="c2a7adb1368e96507210e405c16724f9b1b0d7d7598fc67cb9461980e6e28e15.png" title=" Click menu doctor button" width="1024"/>
-                <img src="c2a7adb1368e96507210e405c16724f9b1b0d7d7598fc67cb9461980e6e28e15.png" title=" And I click menu doctor (completed)" width="1024"/>
-                <img src="b0217cc7b1ddb08400095a40da521a89a977fb341b01c367ef7895f0d833879f.png" title=" When I input doctor phone number and click search" width="1024"/>
-                <img src="b0217cc7b1ddb08400095a40da521a89a977fb341b01c367ef7895f0d833879f.png" title=" Click search button" width="1024"/>
-                <img src="7154d5408f87af0484b3c0653de09adee1b05ea3c329ae1801599f9d06270cb3.png" title=" Click search button (completed)" width="1024"/>
-                <img src="7154d5408f87af0484b3c0653de09adee1b05ea3c329ae1801599f9d06270cb3.png" title=" When I input doctor phone number and click search (completed)" width="1024"/>
-                <img src="6270330c473c917087f06c954349d1f8d695d272bcb5035ee42df53a30b478bc.png" title=" Then I validate search by doctor phone number: <span class='success-color'>SUCCESS</span>" width="1024"/>
+                <img src="ed15a54c91c342d96a850276df7b559f4526b370fc93040e3c407a48a170f368.png" title=" Given I am at the dashboard page" width="1024"/>
+                <img src="ed15a54c91c342d96a850276df7b559f4526b370fc93040e3c407a48a170f368.png" title=" Open url" width="1024"/>
+                <img src="ed15a54c91c342d96a850276df7b559f4526b370fc93040e3c407a48a170f368.png" title=" Validate on dashboard page" width="1024"/>
+                <img src="ed15a54c91c342d96a850276df7b559f4526b370fc93040e3c407a48a170f368.png" title=" Validate on dashboard page (completed)" width="1024"/>
+                <img src="ed15a54c91c342d96a850276df7b559f4526b370fc93040e3c407a48a170f368.png" title=" Given I am at the dashboard page (completed)" width="1024"/>
+                <img src="20277f1d76f1b925628464fcd1ece5de77a814679d1be3fdcf836a7ddadfed60.png" title=" And I click menu doctor" width="1024"/>
+                <img src="20277f1d76f1b925628464fcd1ece5de77a814679d1be3fdcf836a7ddadfed60.png" title=" Click menu doctor button" width="1024"/>
+                <img src="93bcc9a7e51fe36df2bb0ee95da8b9e15460ad67a465a8def437a77fe40a1b48.png" title=" Click menu doctor button (completed)" width="1024"/>
+                <img src="93bcc9a7e51fe36df2bb0ee95da8b9e15460ad67a465a8def437a77fe40a1b48.png" title=" And I click menu doctor (completed)" width="1024"/>
+                <img src="b54de4b724f66885ec50d07952de15f12265b0fdc681f3df2cd6e8c6a693a3d6.png" title=" When I input doctor phone number and click search" width="1024"/>
+                <img src="b54de4b724f66885ec50d07952de15f12265b0fdc681f3df2cd6e8c6a693a3d6.png" title=" Click search button" width="1024"/>
+                <img src="0a5756374bea7e3ba69b7dd06e692aea56bcf0eafcfcd73e98ee81c36d87d1d1.png" title=" Click search button (completed)" width="1024"/>
+                <img src="0a5756374bea7e3ba69b7dd06e692aea56bcf0eafcfcd73e98ee81c36d87d1d1.png" title=" When I input doctor phone number and click search (completed)" width="1024"/>
+                <img src="0a5756374bea7e3ba69b7dd06e692aea56bcf0eafcfcd73e98ee81c36d87d1d1.png" title=" Then I validate search by doctor phone number" width="1024"/>
+                <img src="5bad8fe42d3953a2a64c53cf1188dec31c3e8f7df48029239f1804b5a953cf2a.png" title=" Validate doctor phone number search result" width="1024"/>
+                <img src="5bad8fe42d3953a2a64c53cf1188dec31c3e8f7df48029239f1804b5a953cf2a.png" title=" Validate doctor phone number search result (completed): <span class='error-color'>ERROR</span>" width="1024"/>
             </div>
         </div>
 

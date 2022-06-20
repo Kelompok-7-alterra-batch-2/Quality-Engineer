@@ -114,4 +114,59 @@ public class AppointmentSteps {
     public void iClickNoButton() {
         appointmentPage.clickNoButton();
     }
+
+    @When("I click Appointment Department Filter Dropdown")
+    public void iClickAppointmentDepartmentDropdown() {
+        appointmentPage.clickFilterDropdown();
+    }
+
+    @And("I click Appointment General")
+    public void iClickAppointmentGeneral() {
+        appointmentPage.clickGeneralMenu();
+    }
+
+    @Then("I validate Today Appointment only show General Department Appointment")
+    public void iValidateTodayAppointmentOnlyShowGeneralDepartmentAppointment() {
+        appointmentPage.validateGeneralAppointment();
+    }
+
+    @And("I click Appointment Neurology")
+    public void iClickAppointmentNeurology() {
+        appointmentPage.clickNeurologyMenu();
+    }
+
+    @Then("I validate Today Appointment only show Neurology Department Appointment")
+    public void iValidateTodayAppointmentOnlyShowNeurologyDepartmentAppointment() {
+        appointmentPage.validateNeurologyAppointment();
+    }
+
+    @And("I click Appointment Cardiology")
+    public void iClickAppointmentCardiology() {
+        appointmentPage.clickCardiologyMenu();
+    }
+
+    @Then("I validate Today Appointment only show Cardiology Department Appointment")
+    public void iValidateTodayAppointmentOnlyShowCardiologyDepartmentAppointment() {
+        appointmentPage.validateCardiologyAppointment();
+    }
+
+    @And("I click Appointment Pediatric")
+    public void iClickAppointmentPediatric() {
+        appointmentPage.clickPediatricMenu();
+    }
+
+    @Then("I validate Today Appointment only show Pediatric Department Appointment")
+    public void iValidateTodayAppointmentOnlyShowPediatricDepartmentAppointment() {
+        appointmentPage.validatePediatricAppointment();
+    }
+
+    @And("I click Appointment Gynecology")
+    public void iClickAppointmentGynecology() {
+        appointmentPage.clickGynecologyMenu();
+    }
+
+    @Then("I validate Today Appointment only show Gynecology Department Appointment")
+    public void iValidateTodayAppointmentOnlyShowGynecologyDepartmentAppointment() {
+        appointmentPage.validateGynecologyAppointment();
+    }
 }
