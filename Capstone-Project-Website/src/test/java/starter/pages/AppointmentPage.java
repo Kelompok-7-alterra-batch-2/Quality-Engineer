@@ -353,7 +353,7 @@ public class AppointmentPage extends PageObject {
     }
 
     @Step
-    public void validateNeurologyAppointment(){
+    public void validateNeurologyAppointment() {
         $(neurologyTitle()).waitUntilVisible();
         $(neurologyTitle()).isDisplayed();
     }

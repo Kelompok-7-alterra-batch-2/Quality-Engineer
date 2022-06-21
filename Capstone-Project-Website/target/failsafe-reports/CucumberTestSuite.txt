@@ -1,64 +1,65 @@
 -------------------------------------------------------------------------------
 Test set: CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 37, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 648.042 s <<< FAILURE! - in CucumberTestSuite
-Appointment.Filter Appointment Neurology Scenario  Time elapsed: 24.215 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
-Driver info: driver.version: unknown
-
-Appointment.Filter Appointment Cardiology Scenario  Time elapsed: 23.138 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
-Driver info: driver.version: unknown
-
-Appointment.Filter Appointment Pediatric Scenario  Time elapsed: 24.043 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
-Driver info: driver.version: unknown
-
-Appointment.Filter Appointment Gynecology Scenario  Time elapsed: 20.182 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
-Driver info: driver.version: unknown
-
-Doctor.Search Doctor Based on Doctor Phone Number Scenario  Time elapsed: 15.311 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'023141241')]"}
+Tests run: 37, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 716.664 s <<< FAILURE! - in CucumberTestSuite
+Appointment.Delete Appointment Data Scenario  Time elapsed: 23.772 s  <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
   (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06a9396faec813ad0ad50ef8d71f9459, findElement {using=xpath, value=//td[contains(text(),'023141241')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51254/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 06a9396faec813ad0ad50ef8d71f9459
+Command: [94ac58f0650c8970b0489846a2b3f276, isElementDisplayed {id=289271e4-99b9-484e-9293-c05708bad7aa}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\USER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57340/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (94ac58f0650c8970b0489846a2b3f276)] -> xpath: //h2[contains(text(),'Today Appointment')]]
+Session ID: 94ac58f0650c8970b0489846a2b3f276
+
+Appointment.Filter Appointment General Scenario  Time elapsed: 19.535 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: driver.version: unknown
+
+Appointment.Filter Appointment Neurology Scenario  Time elapsed: 19.241 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: driver.version: unknown
+
+Appointment.Filter Appointment Cardiology Scenario  Time elapsed: 18.893 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: driver.version: unknown
+
+Appointment.Filter Appointment Gynecology Scenario  Time elapsed: 14.681 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for By.xpath: //body/div[@id='root']/div[1]/div[2]/div[2]/div[3]/div[1]/h3[1] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DELL', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '15.0.2'
+Driver info: driver.version: unknown
 

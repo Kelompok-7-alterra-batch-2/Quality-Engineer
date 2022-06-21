@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-06-2022 16:30</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 21-06-2022 10:43</span>
     <br style="clear:left"/>
 </div>
 
@@ -194,9 +194,9 @@ So that I can add, edit, delete, and search appointment
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Delete Appointment Data Scenario
+                                <span class="error-color">Delete Appointment Data Scenario
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -213,26 +213,60 @@ So that I can add, edit, delete, and search appointment
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Stale element reference exception: stale element reference: element is not attached to the page document</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.StaleElementReferenceException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pages.AppointmentPage.appointmentDeleted(AppointmentPage.java:305)<br />starter.stepdefinitions.AppointmentSteps.iValidateAppointmentSuccessDeleted(AppointmentSteps.java:95)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource10294397826959610502.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="f26b945c70242e04c18b9c3105363a160d3d976bdfbf7f5edfb23f8f52be3dc1.png" title=" Given I am on the dashboard page" width="1024"/>
-                <img src="f26b945c70242e04c18b9c3105363a160d3d976bdfbf7f5edfb23f8f52be3dc1.png" title=" Open url" width="1024"/>
-                <img src="f26b945c70242e04c18b9c3105363a160d3d976bdfbf7f5edfb23f8f52be3dc1.png" title=" Validate on dashboard page" width="1024"/>
+                <img src="549dc6c224d17ec61fdd306ab44afaddbe98634e46bed43750459de80b3619a1.png" title=" Given I am on the dashboard page" width="1024"/>
+                <img src="549dc6c224d17ec61fdd306ab44afaddbe98634e46bed43750459de80b3619a1.png" title=" Open url" width="1024"/>
+                <img src="549dc6c224d17ec61fdd306ab44afaddbe98634e46bed43750459de80b3619a1.png" title=" Validate on dashboard page" width="1024"/>
                 <img src="ed15a54c91c342d96a850276df7b559f4526b370fc93040e3c407a48a170f368.png" title=" Validate on dashboard page (completed)" width="1024"/>
                 <img src="ed15a54c91c342d96a850276df7b559f4526b370fc93040e3c407a48a170f368.png" title=" Given I am on the dashboard page (completed)" width="1024"/>
-                <img src="dde6ee49eef829c4844cc40a8aaa4d6e912eaee4e88eb74d4e912a38905c5f6b.png" title=" And I click menu Appointment" width="1024"/>
-                <img src="dde6ee49eef829c4844cc40a8aaa4d6e912eaee4e88eb74d4e912a38905c5f6b.png" title=" Click menu appointment button" width="1024"/>
-                <img src="dde6ee49eef829c4844cc40a8aaa4d6e912eaee4e88eb74d4e912a38905c5f6b.png" title=" And I click menu Appointment (completed)" width="1024"/>
-                <img src="884473cf1b0887fbe5dff39717873e5a70529af4a7eb96d42aec764fe5b13722.png" title=" When I click delete Appointment icon" width="1024"/>
-                <img src="884473cf1b0887fbe5dff39717873e5a70529af4a7eb96d42aec764fe5b13722.png" title=" Click delete appointment icon" width="1024"/>
-                <img src="884473cf1b0887fbe5dff39717873e5a70529af4a7eb96d42aec764fe5b13722.png" title=" When I click delete Appointment icon (completed)" width="1024"/>
-                <img src="91a345a6fce49f67b53ec14a9d9e22da6ea484854038f2522f6ac6e96a596fdb.png" title=" And I click the Appointment delete button" width="1024"/>
-                <img src="91a345a6fce49f67b53ec14a9d9e22da6ea484854038f2522f6ac6e96a596fdb.png" title=" Click delete appointment button" width="1024"/>
-                <img src="896caad90fa34762d95c445ae2cba04ca228746ba79d813c2364cdb235a15122.png" title=" Click delete appointment button (completed)" width="1024"/>
-                <img src="896caad90fa34762d95c445ae2cba04ca228746ba79d813c2364cdb235a15122.png" title=" And I click the Appointment delete button (completed)" width="1024"/>
-                <img src="7a773f0c4431a7de594b561c72baa4e0ea455a9942ae86d558460355fcdb4664.png" title=" Then I validate Appointment success deleted" width="1024"/>
-                <img src="7a773f0c4431a7de594b561c72baa4e0ea455a9942ae86d558460355fcdb4664.png" title=" Appointment deleted" width="1024"/>
-                <img src="7a773f0c4431a7de594b561c72baa4e0ea455a9942ae86d558460355fcdb4664.png" title=" Then I validate Appointment success deleted (completed): <span class='success-color'>SUCCESS</span>" width="1024"/>
+                <img src="b544a93b86bfe0d20415244adccd6dc3b8e83513ea5bef4ef6f3c4b9448d8262.png" title=" And I click menu Appointment" width="1024"/>
+                <img src="b544a93b86bfe0d20415244adccd6dc3b8e83513ea5bef4ef6f3c4b9448d8262.png" title=" Click menu appointment button" width="1024"/>
+                <img src="b544a93b86bfe0d20415244adccd6dc3b8e83513ea5bef4ef6f3c4b9448d8262.png" title=" And I click menu Appointment (completed)" width="1024"/>
+                <img src="4be1b5d36cec548275c6a682a821b56b9075288afe5f7b573793951abeae0bb9.png" title=" When I click delete Appointment icon" width="1024"/>
+                <img src="4be1b5d36cec548275c6a682a821b56b9075288afe5f7b573793951abeae0bb9.png" title=" Click delete appointment icon" width="1024"/>
+                <img src="4be1b5d36cec548275c6a682a821b56b9075288afe5f7b573793951abeae0bb9.png" title=" When I click delete Appointment icon (completed)" width="1024"/>
+                <img src="2a1f9d2e0ccd8b8b63bd2f45a3d48fc95e19038ad49c421ec901484053ad7917.png" title=" And I click the Appointment delete button" width="1024"/>
+                <img src="2a1f9d2e0ccd8b8b63bd2f45a3d48fc95e19038ad49c421ec901484053ad7917.png" title=" Click delete appointment button" width="1024"/>
+                <img src="2a1f9d2e0ccd8b8b63bd2f45a3d48fc95e19038ad49c421ec901484053ad7917.png" title=" And I click the Appointment delete button (completed)" width="1024"/>
+                <img src="2a1f9d2e0ccd8b8b63bd2f45a3d48fc95e19038ad49c421ec901484053ad7917.png" title=" Then I validate Appointment success deleted" width="1024"/>
+                <img src="7a773f0c4431a7de594b561c72baa4e0ea455a9942ae86d558460355fcdb4664.png" title=" Appointment deleted: <span class='error-color'>ERROR</span>" width="1024"/>
             </div>
         </div>
 

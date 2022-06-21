@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Appointment","Create New Appointment With Registered Patient Scenario","SUCCESS","2022-06-20T16:26:42.255653+07:00[Asia/Bangkok]","0.0","61.73"
+"Appointment","Create New Appointment With Registered Patient Scenario","SUCCESS","2022-06-21T10:37:37.2638023+07:00[Asia/Bangkok]","0.0","110.62"
+"Appointment","Cancel Create New Appointment Scenario","SUCCESS","2022-06-21T10:40:18.0334762+07:00[Asia/Bangkok]","0.0","61.29"

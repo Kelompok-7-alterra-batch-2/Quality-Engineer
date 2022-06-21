@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Doctor","Search Doctor Based on Doctor NID Scenario","SUCCESS","2022-06-20T16:35:44.1522404+07:00[Asia/Bangkok]","0.0","7.58"
+"Patient","Search Patient Based on Patient Name Scenario","SUCCESS","2022-06-21T10:46:05.3003991+07:00[Asia/Bangkok]","0.0","8.5"
+"Doctor","Search Doctor Based on Doctor NID Scenario","SUCCESS","2022-06-21T10:47:43.0065183+07:00[Asia/Bangkok]","0.0","7.82"
