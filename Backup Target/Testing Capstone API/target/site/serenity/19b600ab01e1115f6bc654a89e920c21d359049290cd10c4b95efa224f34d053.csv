@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Doctor","GET - Get All Doctors","SUCCESS","2022-06-27T17:01:44.3710471+07:00[Asia/Bangkok]","0.0","14.92"
+"Doctor","GET - Get Existing Doctor By ID","SUCCESS","2022-06-27T17:01:59.320943+07:00[Asia/Bangkok]","0.0","4.81"
+"Doctor","GET - Get NonExisting Doctor By ID","SUCCESS","2022-06-27T17:02:04.1667971+07:00[Asia/Bangkok]","0.0","3.63"

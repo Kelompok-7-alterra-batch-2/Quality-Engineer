@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Appointment","Create New Appointment With Unregistered Patient Scenario","SUCCESS","2022-06-21T10:39:30.099241+07:00[Asia/Bangkok]","0.0","47.01"
-"Appointment","Edit Existing Appointment Data Scenario","SUCCESS","2022-06-21T10:41:21.1443429+07:00[Asia/Bangkok]","0.0","31.63"
-"Appointment","Cancel Edit Existing Appointment Data Scenario","SUCCESS","2022-06-21T10:41:53.7139297+07:00[Asia/Bangkok]","0.0","38.84"
-"Appointment","Cancel Delete Appointment Data Scenario","SUCCESS","2022-06-21T10:42:33.7392665+07:00[Asia/Bangkok]","0.0","39.16"

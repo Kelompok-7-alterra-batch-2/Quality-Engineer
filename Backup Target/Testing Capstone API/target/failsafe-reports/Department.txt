@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Department
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.941 s <<< FAILURE! - in Department
+Department.POST - Create Department #2  Time elapsed: 3.802 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <200>.
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Department" skipped="0" tests="3" time="20.84" timestamp="2022-06-27 05:01:44"><testcase name="GET - Get All Departments"/><testcase name="POST - Create Department"><failure message="1 expectation failed.&#10;Expected status code &lt;500&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+Capstone.Project.API@1.0-SNAPSHOT/starter.module.Department.validateNewDepartmentStatusCode(Department.java:62)&#13;
+Capstone.Project.API@1.0-SNAPSHOT/starter.stepdefinitions.DepartmentStep.iValidateNewDepartmentStatusCodeIsStatus_code(DepartmentStep.java:43)&#13;
+✽.I validate new department status code is 500(file:///E:/My%20Documents/File%20Difa/TI%20Semester%206%20Kampus%20Merdeka%20Alterra/Tugas/CAPSTONE%20Project/Capstone-Project-API/src/test/resources/2.Department.feature:15)&#13;
+</system-err></testcase></testsuite>

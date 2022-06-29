@@ -12,48 +12,28 @@ public class DashboardPage extends PageObject {
         return By.xpath("//h3[contains(text(),'Dashboard')]");
     }
 
-    private By editButton(){
-        return By.xpath("//tbody/tr[1]/td[7]/button[1]");
+    private By appointmentButton(){
+        return By.xpath("//p[contains(text(),'Appoinments')]");
     }
 
-    private By patientButton(){
-        return By.xpath("//div[contains(text(),'Patient')]");
+    private By appointmentHeader(){
+        return By.xpath("//h3[contains(text(),'Appointment')]");
     }
 
     private By doctorButton(){
+        return By.xpath("//p[contains(text(),'Doctors')]");
+    }
+
+    private By doctorHeader(){
+        return By.xpath("//h3[contains(text(),'Doctor')]");
+    }
+
+    private By patientSidebarButton(){
+        return By.xpath("//div[contains(text(),'Patient')]");
+    }
+
+    private By doctorSidebarButton(){
         return By.xpath("//div[contains(text(),'Doctor')]");
-    }
-
-    private By cancelButton(){
-        return By.xpath("//body/div[2]/div[3]/button[1]");
-    }
-
-    private By cancelButtonAgain(){
-        return By.xpath("//body/div[2]/div[3]/div[1]/button[1]");
-    }
-
-    private By deleteButton(){
-        return By.xpath("//tbody/tr[1]/td[7]/button[2]");
-    }
-
-    private By deleteButtonAgain(){
-        return By.xpath("//body/div[2]/div[3]/div[1]/button[2]");
-    }
-
-    private By editPopUp(){
-        return By.id("modal-edit-title");
-    }
-
-    private By deletePopUp(){
-        return By.id("modal-delete-title");
-    }
-
-    private By deleteSuccessMessage(){
-        return By.xpath("//tbody/tr[1]/div[1]");
-    }
-
-    private By validateCancelDelete(){
-        return By.xpath("//p[contains(text(),\"Appointment's Today\")]");
     }
 
     @Step
@@ -67,65 +47,37 @@ public class DashboardPage extends PageObject {
     }
 
     @Step
-    public void clickEditButton(){
-        to(editButton());
-        $(editButton()).click();
+    public void clickAppointmentButton(){
+        to(appointmentButton());
+        $(appointmentButton()).click();
     }
 
     @Step
-    public void clickMenuPatientButton(){
-        to(patientButton());
-        $(patientButton()).click();
+    public void validateOnAppointmentPage(){
+        $(appointmentHeader()).isDisplayed();
     }
 
     @Step
-    public void clickMenuDoctorButton(){
+    public void clickDoctorButton(){
         to(doctorButton());
         $(doctorButton()).click();
     }
 
     @Step
-    public void editPopUpAppears(){
-        $(editPopUp()).isDisplayed();
+    public void validateOnDoctorPage(){
+        $(doctorHeader()).isDisplayed();
     }
 
     @Step
-    public void clickCancelButton(){
-        to(cancelButton());
-        $(cancelButton()).click();
+    public void clickMenuPatientButton(){
+        to(patientSidebarButton());
+        $(patientSidebarButton()).click();
     }
 
     @Step
-    public void clickAgainCancelButton(){
-        to(cancelButtonAgain());
-        $(cancelButtonAgain()).click();
+    public void clickMenuDoctorButton(){
+        to(doctorSidebarButton());
+        $(doctorSidebarButton()).click();
     }
 
-    @Step
-    public void clickDeleteButton(){
-        to(deleteButton());
-        $(deleteButton()).click();
-    }
-
-    @Step
-    public void clickAgainDeleteButton(){
-        to(deleteButtonAgain());
-        $(deleteButtonAgain()).click();
-    }
-
-    @Step
-    public void deletePopUpAppears(){
-        $(deletePopUp()).isDisplayed();
-    }
-
-    @Step
-    public void deleteSuccess(){
-        $(deleteSuccessMessage()).isDisplayed();
-    }
-
-    @Step
-    public void cancelDelete(){
-        to(validateCancelDelete());
-        $(validateCancelDelete()).isDisplayed();
-    }
 }

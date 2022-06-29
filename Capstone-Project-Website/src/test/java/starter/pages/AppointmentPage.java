@@ -3,6 +3,7 @@ package starter.pages;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 
 import java.time.Duration;
 
@@ -261,8 +262,8 @@ public class AppointmentPage extends PageObject {
     @Step
     public void editAppointmentReason(){
         $(AppointmentReasonField()).click();
-        $(AppointmentReasonField()).clear();
-        $(AppointmentReasonField()).type("Cant Follow The Damn Train");
+        $(AppointmentReasonField()).type(Keys.chord(Keys.CONTROL, "a",Keys.DELETE));
+        $(AppointmentReasonField()).type("Heart Break");
     }
 
     @Step

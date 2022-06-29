@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="5" name="Doctor" skipped="0" tests="8" time="45.54" timestamp="2022-06-28 07:19:49"><testcase name="POST - Create Doctor"><failure message="1 expectation failed.&#10;Expected status code &lt;500&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+Capstone.Project.API@1.0-SNAPSHOT/starter.module.Doctor.validateNewDoctorStatusCode(Doctor.java:207)&#13;
+Capstone.Project.API@1.0-SNAPSHOT/starter.stepdefinitions.DoctorStep.iValidateNewDoctorStatusCodeIsStatus_code(DoctorStep.java:76)&#13;
+✽.I validate new doctor status code is 500(file:///E:/My%20Documents/File%20Difa/TI%20Semester%206%20Kampus%20Merdeka%20Alterra/Tugas/CAPSTONE%20Project/Capstone-Project-API/src/test/resources/3.Doctor.feature:29)&#13;
+</system-err></testcase></testsuite>

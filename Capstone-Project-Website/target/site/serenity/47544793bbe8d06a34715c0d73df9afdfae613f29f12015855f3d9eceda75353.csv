@@ -1,8 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Appointment","Filter Appointment Pediatric Scenario","SUCCESS","2022-06-21T10:44:35.3765418+07:00[Asia/Bangkok]","0.0","10.72"
-"Patient","Create New Patient Scenario","SUCCESS","2022-06-21T10:45:01.7199194+07:00[Asia/Bangkok]","0.0","10.98"
-"Patient","Edit Patient Data Scenario","SUCCESS","2022-06-21T10:45:23.5079016+07:00[Asia/Bangkok]","0.0","14.36"
-"Doctor","Create New Doctor Scenario","SUCCESS","2022-06-21T10:46:40.5608954+07:00[Asia/Bangkok]","0.0","11.16"
-"Doctor","Edit Doctor Data Scenario","SUCCESS","2022-06-21T10:47:01.7162528+07:00[Asia/Bangkok]","0.0","10.64"
-"Doctor","Cancel Edit Doctor Data Scenario","SUCCESS","2022-06-21T10:47:13.3783981+07:00[Asia/Bangkok]","0.0","10.21"
-"Doctor","Filter Doctor Gynecology Scenario","SUCCESS","2022-06-21T10:48:58.0120109+07:00[Asia/Bangkok]","0.0","10.55"

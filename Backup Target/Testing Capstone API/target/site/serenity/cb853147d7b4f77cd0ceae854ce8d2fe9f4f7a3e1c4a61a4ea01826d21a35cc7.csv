@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Admin","POST - Create Admin","FAILURE","2022-06-27T17:02:32.6071763+07:00[Asia/Bangkok]","0.0","19.11"
+"Admin","PUT - Update Existing Admin","FAILURE","2022-06-27T17:02:51.7422687+07:00[Asia/Bangkok]","0.0","21.12"

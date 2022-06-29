@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: Admin
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 116.347 s <<< FAILURE! - in Admin
+Admin.POST - Create Admin #2  Time elapsed: 4.325 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <200>.
+
+
+Admin.POST - Create Admin #4  Time elapsed: 3.935 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <200>.
+
+
+Admin.POST - Create Admin #5  Time elapsed: 3.933 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <200>.
+
+
+Admin.PUT - Update Existing Admin #2  Time elapsed: 4.379 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <200>.
+
+
+Admin.PUT - Update Existing Admin #4  Time elapsed: 4.72 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <200>.
+
+
+Admin.PUT - Update Existing Admin #5  Time elapsed: 4.314 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <200>.
+
+
