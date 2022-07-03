@@ -1,5 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Login","Login scenario","SUCCESS","2022-06-08T12:09:13.0298273+07:00[Asia/Bangkok]","0.0","19.37"
-"Dashboard","See Update Patient Data Page Scenario","SUCCESS","2022-06-08T12:09:32.4629044+07:00[Asia/Bangkok]","0.0","11.14"
-"Patient","Click back on Patient page scenario","SUCCESS","2022-06-08T12:09:43.6305848+07:00[Asia/Bangkok]","0.0","11.89"
-"Sidebar","Sidebar scenario","SUCCESS","2022-06-08T12:09:55.5460842+07:00[Asia/Bangkok]","0.0","24.1"
+"Sidebar","Sidebar Scenario","SUCCESS","2022-07-03T23:33:57.634232+07:00[Asia/Bangkok]","0.0","24.74"

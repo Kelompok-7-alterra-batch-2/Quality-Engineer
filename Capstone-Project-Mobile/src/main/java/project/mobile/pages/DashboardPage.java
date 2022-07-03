@@ -15,12 +15,40 @@ public class DashboardPage extends BasePageObject {
         return MobileBy.AccessibilityId("Patient");
     }
 
+    By finishedConsultationPatientPage(){
+        return MobileBy.AccessibilityId("Finished Consultation Patient");
+    }
+
+    By dashboardDate(){
+        return MobileBy.AccessibilityId("July, 3 2022");
+    }
+
+    By finishedPatientPage(){
+        return MobileBy.AccessibilityId("Finished Patient Data");
+    }
+
     By sidebarButton(){
         return MobileBy.AccessibilityId("Open navigation menu");
     }
 
     By patientIcon(){
-        return MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button[2]");
+        return MobileBy.xpath("(//android.widget.Button[@content-desc=\"goDetailId\"])[1]");
+    }
+
+    By finishedPatientIcon(){
+        return MobileBy.xpath("(//android.widget.Button[@content-desc=\"goDetailId\"])[2]");
+    }
+
+    By seeMorePatientButton(){
+        return MobileBy.xpath("(//android.widget.Button[@content-desc=\"See More\"])[1]");
+    }
+
+    By seeMoreFinishedConsultationButton(){
+        return MobileBy.xpath("(//android.widget.Button[@content-desc=\"See More\"])[2]");
+    }
+
+    By backIcon(){
+        return MobileBy.AccessibilityId("Tombol kembali");
     }
 
     By dashboardButton(){
@@ -29,6 +57,10 @@ public class DashboardPage extends BasePageObject {
 
     By patientButton(){
         return MobileBy.AccessibilityId("Patient");
+    }
+
+    By logOutButton(){
+        return MobileBy.AccessibilityId("Log Out");
     }
 
     public void verifyDashboardPageDisplayed(){
@@ -53,5 +85,37 @@ public class DashboardPage extends BasePageObject {
 
     public void clickPatientIcon(){
         click(patientIcon());
+    }
+
+    public void clickLogOutButton(){
+        click(logOutButton());
+    }
+
+    public void clickSeeMorePatientButton(){
+        click(seeMorePatientButton());
+    }
+
+    public void clickBackIcon(){
+        click(backIcon());
+    }
+
+    public void clickFinishedPatientIcon(){
+        click(finishedPatientIcon());
+    }
+
+    public void verifyFinishedPatientPageDisplayed(){
+        Assertions.assertTrue(find(finishedPatientPage()).isDisplayed());
+    }
+
+    public void clickSeeMoreFinishedConsultationButton(){
+        click(seeMoreFinishedConsultationButton());
+    }
+
+    public void verifyFinishedConsultationPatientPageDisplayed(){
+        Assertions.assertTrue(find(finishedConsultationPatientPage()).isDisplayed());
+    }
+
+    public void verifyDateOnDashboardPageIsCorrect(){
+        Assertions.assertTrue(find(dashboardDate()).isDisplayed());
     }
 }

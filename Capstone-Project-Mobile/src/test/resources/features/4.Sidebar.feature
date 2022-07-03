@@ -3,7 +3,9 @@ Feature: Sidebar
   I want to use sidebar
   So that I can change page
 
-  Scenario Outline: Sidebar scenario
+#mvn clean verify -Dtags="@SidebarScenario"
+  @SidebarScenario
+  Scenario Outline: Sidebar Scenario
     Given I am on Dashboard page
     When I click sidebar button
     And I click "<menu>" menu

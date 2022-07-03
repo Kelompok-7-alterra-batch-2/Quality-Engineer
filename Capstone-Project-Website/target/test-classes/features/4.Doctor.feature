@@ -13,6 +13,7 @@ Feature: Doctor
     And I input valid data doctor and click submit
     Then I get New Doctor has been added result
 
+#mvn clean verify -Dtags="@CancelCreateDoctor"
   @CancelCreateDoctor
   Scenario: Cancel Create New Doctor Scenario
     Given I'am at the dashboard page

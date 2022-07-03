@@ -9,35 +9,39 @@ import static net.serenitybdd.screenplay.actions.Scroll.to;
 public class DoctorPage extends PageObject {
 
     private By addNewDoctorButton(){
-        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/div[1]/button[1]");
-    }
-
-    private By doctorNameField(){
-        return By.xpath("//body/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/input[1]");
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/button[1]");
     }
 
     private By doctorNIDField(){
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/input[1]");
+    }
+
+    private By doctorNameField(){
         return By.xpath("//body/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/input[1]");
     }
 
+    private By dateOfBirthField(){
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[3]/div[1]/div[1]/input[1]");
+    }
+
     private By departmentDropdownButton(){
-        return By.id("mui-component-select-department");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[4]/div[1]/div[1]");
     }
 
     private By departmentOptionButton(){
-        return By.xpath("//body/div[@id='menu-department']/div[3]/ul[1]/li[6]");
+        return By.xpath("//body/div[@id='menu-department_id']/div[3]/ul[1]/li[6]");
     }
 
     private By doctorEmailField(){
-        return By.xpath("//body/div[2]/div[3]/div[2]/div[4]/div[1]/div[1]/input[1]");
-    }
-
-    private By doctorPasswordField(){
         return By.xpath("//body/div[2]/div[3]/div[2]/div[5]/div[1]/div[1]/input[1]");
     }
 
-    private By doctorPhoneNumberField(){
+    private By doctorPasswordField(){
         return By.xpath("//body/div[2]/div[3]/div[2]/div[6]/div[1]/div[1]/input[1]");
+    }
+
+    private By doctorPhoneNumberField(){
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[7]/div[1]/div[1]/input[1]");
     }
 
     private By submitButton(){
@@ -156,7 +160,7 @@ public class DoctorPage extends PageObject {
         return By.xpath("//td[contains(text(),'gynecology')]");
     }
 
-    ////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     @Step
     public void clickAddNewDoctorButton(){
@@ -165,13 +169,18 @@ public class DoctorPage extends PageObject {
     }
 
     @Step
-    public void inputDoctorName(){
-        $(doctorNameField()).type("Dr.Johhny Sins");
+    public void inputDoctorNID(){
+        $(doctorNIDField()).type("1234");
     }
 
     @Step
-    public void inputDoctorNID(){
-        $(doctorNIDField()).type("69");
+    public void inputDoctorName(){
+        $(doctorNameField()).type("Dr.Johhny");
+    }
+
+    @Step
+    public void inputDateOfBirth(){
+        $(dateOfBirthField()).type("12311978");
     }
 
     @Step
@@ -208,7 +217,8 @@ public class DoctorPage extends PageObject {
     }
 
     @Step
-    public void newDoctorAdded(){
+    public void newDoctorAdded() throws InterruptedException {
+        Thread.sleep(5000);
         $(validateSuccessDoctor()).isDisplayed();
     }
 

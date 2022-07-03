@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-06-08T05:09:12.828Z",
+        "start_timestamp": "2022-07-03T16:33:57.477Z",
         "before": [
           {
             "result": {
-              "duration": 9006020500,
+              "duration": 9522765300,
               "status": "passed"
             },
             "match": {
@@ -15,320 +15,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Login scenario",
-        "description": "",
-        "id": "login;login-scenario;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 382523700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 211416300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am on the login page",
-            "match": {
-              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3882792800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I input \"test@test.com\" email",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"test@test.com\"",
-                  "offset": 8
-                }
-              ],
-              "location": "project.mobile.steps.LoginSteps.iInputEmail(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3774006800,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I input \"test12345\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"test12345\"",
-                  "offset": 8
-                }
-              ],
-              "location": "project.mobile.steps.LoginSteps.iInputPassword(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1631895700,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I tap sign in button",
-            "match": {
-              "location": "project.mobile.steps.LoginSteps.iTapSignInButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 147473000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I get the \"dashboard page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"dashboard page\"",
-                  "offset": 10
-                }
-              ],
-              "location": "project.mobile.steps.LoginSteps.iGetThe(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Login",
-    "description": "  As an User\n  I want to success login\n  So that I can see my dashboard page",
-    "id": "login",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/1.Login.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2022-06-08T05:09:32.440Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8368018700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "project.mobile.hooks.AndroidDriverHook.before()"
-            }
-          }
-        ],
-        "line": 6,
-        "name": "See Update Patient Data Page Scenario",
-        "description": "",
-        "id": "dashboard;see-update-patient-data-page-scenario",
-        "after": [
-          {
-            "result": {
-              "duration": 345229900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 118198300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am at the Dashboard page",
-            "match": {
-              "location": "project.mobile.steps.DashboardSteps.iAmAtTheDashboardPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 180119400,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I click \u003e icon on Patients Today list",
-            "match": {
-              "location": "project.mobile.steps.DashboardSteps.iClickIconOnPatientsTodayList()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2099078400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I am on update patient data page",
-            "match": {
-              "location": "project.mobile.steps.DashboardSteps.iAmOnUpdatePatientDataPage()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Dashboard",
-    "description": "  As an User\n  I want to see dashboard page\n  So that I can use my dashboard page feature",
-    "id": "dashboard",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/2.Dashboard.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2022-06-08T05:09:43.620Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8289912000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "project.mobile.hooks.AndroidDriverHook.before()"
-            }
-          }
-        ],
-        "line": 6,
-        "name": "Click back on Patient page scenario",
-        "description": "",
-        "id": "patient;click-back-on-patient-page-scenario",
-        "after": [
-          {
-            "result": {
-              "duration": 355116900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 98064600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I am on the Dashboard page",
-            "match": {
-              "location": "project.mobile.steps.PatientSteps.iAmOnTheDashboardPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 977429900,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I click the sidebar button",
-            "match": {
-              "location": "project.mobile.steps.PatientSteps.iClickTheSidebarButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 986811300,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click patient sidebar menu",
-            "match": {
-              "location": "project.mobile.steps.PatientSteps.iClickPatientSidebarMenu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1076948200,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I click back button on patient page",
-            "match": {
-              "location": "project.mobile.steps.PatientSteps.iClickBackButtonOnPatientPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 68783100,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I am back to Dashboard page",
-            "match": {
-              "location": "project.mobile.steps.PatientSteps.iAmBackToDashboardPage()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Patient",
-    "description": "  As an User\n  I want to see Patient page\n  So that I can see Patient list",
-    "id": "patient",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/3.Patient.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2022-06-08T05:09:55.534Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8045033600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "project.mobile.hooks.AndroidDriverHook.before()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "Sidebar scenario",
+        "line": 15,
+        "name": "Sidebar Scenario",
         "description": "",
         "id": "sidebar;sidebar-scenario;;2",
         "after": [
           {
             "result": {
-              "duration": 298113200,
+              "duration": 311251100,
               "status": "passed"
             },
             "match": {
@@ -341,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1256024700,
+              "duration": 247406500,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "I am on Dashboard page",
             "match": {
               "location": "project.mobile.steps.SidebarSteps.iAmOnDashboardPage()"
@@ -353,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 173114500,
+              "duration": 1311212800,
               "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "I click sidebar button",
             "match": {
               "location": "project.mobile.steps.SidebarSteps.iClickSidebarButton()"
@@ -365,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 930615800,
+              "duration": 267352500,
               "status": "passed"
             },
-            "line": 9,
+            "line": 11,
             "name": "I click \"dashboard\" menu",
             "match": {
               "arguments": [
@@ -383,10 +77,10 @@
           },
           {
             "result": {
-              "duration": 864573400,
+              "duration": 921663700,
               "status": "passed"
             },
-            "line": 10,
+            "line": 12,
             "name": "I get the \"dashboard page\" page",
             "match": {
               "arguments": [
@@ -399,14 +93,19 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@SidebarScenario"
+          }
         ]
       },
       {
-        "start_timestamp": "2022-06-08T05:10:07.166Z",
+        "start_timestamp": "2022-07-03T16:34:10.646Z",
         "before": [
           {
             "result": {
-              "duration": 8294573700,
+              "duration": 7336735600,
               "status": "passed"
             },
             "match": {
@@ -414,14 +113,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Sidebar scenario",
+        "line": 16,
+        "name": "Sidebar Scenario",
         "description": "",
         "id": "sidebar;sidebar-scenario;;3",
         "after": [
           {
             "result": {
-              "duration": 306450100,
+              "duration": 305326100,
               "status": "passed"
             },
             "match": {
@@ -434,10 +133,10 @@
         "steps": [
           {
             "result": {
-              "duration": 109073400,
+              "duration": 210140200,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "I am on Dashboard page",
             "match": {
               "location": "project.mobile.steps.SidebarSteps.iAmOnDashboardPage()"
@@ -446,10 +145,10 @@
           },
           {
             "result": {
-              "duration": 1542678400,
+              "duration": 995665400,
               "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "I click sidebar button",
             "match": {
               "location": "project.mobile.steps.SidebarSteps.iClickSidebarButton()"
@@ -458,10 +157,10 @@
           },
           {
             "result": {
-              "duration": 966642300,
+              "duration": 221145900,
               "status": "passed"
             },
-            "line": 9,
+            "line": 11,
             "name": "I click \"patient\" menu",
             "match": {
               "arguments": [
@@ -476,10 +175,10 @@
           },
           {
             "result": {
-              "duration": 1235818300,
+              "duration": 2620424200,
               "status": "passed"
             },
-            "line": 10,
+            "line": 12,
             "name": "I get the \"patient page\" page",
             "match": {
               "arguments": [
@@ -491,6 +190,11 @@
               "location": "project.mobile.steps.SidebarSteps.iGetThePage(java.lang.String)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SidebarScenario"
           }
         ]
       }

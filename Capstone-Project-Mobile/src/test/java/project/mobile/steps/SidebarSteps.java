@@ -45,4 +45,9 @@ public class SidebarSteps {
                 break;
         }
     }
+
+    @And("I click logout sidebar menu")
+    public void iClickLogoutSidebarMenu() {
+        dashboardPage.clickLogOutButton();
+    }
 }

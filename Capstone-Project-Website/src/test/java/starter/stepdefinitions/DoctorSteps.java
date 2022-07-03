@@ -34,8 +34,9 @@ public class DoctorSteps {
 
     @And("I input valid data doctor and click submit")
     public void iInputValidDataDoctorAndClickSubmit() {
-        doctorPage.inputDoctorName();
         doctorPage.inputDoctorNID();
+        doctorPage.inputDoctorName();
+        doctorPage.inputDateOfBirth();
         doctorPage.clickDoctorDepartmentDropdown();
         doctorPage.clickDoctorDepartmentOption();
         doctorPage.inputDoctorEmail();
@@ -45,7 +46,7 @@ public class DoctorSteps {
     }
 
     @Then("I get New Doctor has been added result")
-    public void iGetNewDoctorHasBeenAddedResult() {
+    public void iGetNewDoctorHasBeenAddedResult() throws InterruptedException {
         doctorPage.newDoctorAdded();
     }
 
