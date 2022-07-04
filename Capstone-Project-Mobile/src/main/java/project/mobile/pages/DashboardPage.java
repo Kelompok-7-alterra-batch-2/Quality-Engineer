@@ -20,7 +20,7 @@ public class DashboardPage extends BasePageObject {
     }
 
     By dashboardDate(){
-        return MobileBy.AccessibilityId("July, 3 2022");
+        return MobileBy.AccessibilityId("July, 4 2022");
     }
 
     By finishedPatientPage(){
@@ -36,7 +36,7 @@ public class DashboardPage extends BasePageObject {
     }
 
     By finishedPatientIcon(){
-        return MobileBy.xpath("(//android.widget.Button[@content-desc=\"goDetailId\"])[2]");
+        return MobileBy.xpath("(//android.widget.Button[@content-desc=\"goDetailId\"])[3]");
     }
 
     By seeMorePatientButton(){

@@ -1,5 +1,6 @@
 project\mobile\steps\PatientSteps.class
 project\mobile\acceptancetests\AcceptanceTestSuite.class
+project\mobile\steps\DashboardSteps.class
 project\mobile\steps\LoginSteps.class
 project\mobile\hooks\AndroidDriverHook.class
 project\mobile\steps\SidebarSteps.class

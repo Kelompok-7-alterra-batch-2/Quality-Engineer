@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Dashboard","See Patients Today Detail And Close Page Scenario","SUCCESS","2022-07-04T12:59:27.5995434+07:00[Asia/Bangkok]","0.0","9.03"
+"Dashboard","See More Patients Today Page And Close Page Scenario","SUCCESS","2022-07-04T12:59:36.6484603+07:00[Asia/Bangkok]","0.0","10.12"
+"Dashboard","See Finished Consultation Detail And Close Page Scenario","SUCCESS","2022-07-04T12:59:46.7934573+07:00[Asia/Bangkok]","0.0","10.77"
+"Dashboard","See More Finished Consultation Page And Close Page Scenario","SUCCESS","2022-07-04T12:59:57.5869802+07:00[Asia/Bangkok]","0.0","9.85"
+"Dashboard","Validate Date On Dashboard Page Scenario","SUCCESS","2022-07-04T13:00:07.4516833+07:00[Asia/Bangkok]","0.0","7.55"

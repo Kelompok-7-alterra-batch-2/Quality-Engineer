@@ -3,11 +3,1440 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-07-03T16:33:57.477Z",
+        "start_timestamp": "2022-07-04T05:56:40.390Z",
         "before": [
           {
             "result": {
-              "duration": 9522765300,
+              "duration": 17101423700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Log in Scenario",
+        "description": "",
+        "id": "login;log-in-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 331219900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 224148200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4089057800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input \"test\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iInputEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4773420300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I tap show password icon and input \"Test@123\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test@123\"",
+                  "offset": 35
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iTapShowPasswordIconAndInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1864435300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I tap hide password icon and tap sign in button",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iTapHidePasswordIconAndTapSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119676700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I get the \"Please enter a valid email address\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter a valid email address\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iGetThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:57:15.380Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6898084500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Log in Scenario",
+        "description": "",
+        "id": "login;log-in-scenario;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 246714900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 717357000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3994384600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input \"test@gmail.com\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@gmail.com\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iInputEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5195432900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I tap show password icon and input \"test1234\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test1234\"",
+                  "offset": 35
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iTapShowPasswordIconAndInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1848262600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I tap hide password icon and tap sign in button",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iTapHidePasswordIconAndTapSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119539700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I get the \"Please enter valid password!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter valid password!\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iGetThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:57:34.492Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6961101800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Log in Scenario",
+        "description": "",
+        "id": "login;log-in-scenario;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 299198100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 100067200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3985781800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input \"test@gmail.com\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@gmail.com\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iInputEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5707492200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I tap show password icon and input \"Test\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test\"",
+                  "offset": 35
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iTapShowPasswordIconAndInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1767884800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I tap hide password icon and tap sign in button",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iTapHidePasswordIconAndTapSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88060000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I get the \"Password must be at least 8 characters in length\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password must be at least 8 characters in length\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iGetThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:57:53.452Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16760708600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Log in Scenario",
+        "description": "",
+        "id": "login;log-in-scenario;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 265179800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 124650400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3950634600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input \"\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iInputEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5092614300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I tap show password icon and input \"Test@123\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test@123\"",
+                  "offset": 35
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iTapShowPasswordIconAndInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1829671400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I tap hide password icon and tap sign in button",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iTapHidePasswordIconAndTapSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3865523700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I get the \"Please enter your email\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter your email\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iGetThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:58:25.388Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7873631200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Log in Scenario",
+        "description": "",
+        "id": "login;log-in-scenario;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 358238100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 123081900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3525326600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input \"test@gmail.com\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@gmail.com\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iInputEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5037817800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I tap show password icon and input \"\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 35
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iTapShowPasswordIconAndInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1562711200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I tap hide password icon and tap sign in button",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iTapHidePasswordIconAndTapSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3128083700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I get the \"Please enter your password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter your password\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iGetThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:58:47.043Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7805425200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Log in Scenario",
+        "description": "",
+        "id": "login;log-in-scenario;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 216143700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 118078700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4856262700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input \"test@gmail.com\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@gmail.com\"",
+                  "offset": 8
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iInputEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4780125800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I tap show password icon and input \"Test@123\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test@123\"",
+                  "offset": 35
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iTapShowPasswordIconAndInputPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2155972100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I tap hide password icon and tap sign in button",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iTapHidePasswordIconAndTapSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127084500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I get the \"dashboard page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dashboard page\"",
+                  "offset": 10
+                }
+              ],
+              "location": "project.mobile.steps.LoginSteps.iGetThe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:59:07.138Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7046477800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Log Out Scenario",
+        "description": "",
+        "id": "login;log-out-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 273181100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 98065900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I am at the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmAtTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 968646200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click sidebar button",
+            "match": {
+              "location": "project.mobile.steps.SidebarSteps.iClickSidebarButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 758868300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click logout sidebar menu",
+            "match": {
+              "location": "project.mobile.steps.SidebarSteps.iClickLogoutSidebarMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1052741500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am on the login page",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iAmOnTheLoginPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10203747600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I login again for next test",
+            "match": {
+              "location": "project.mobile.steps.LoginSteps.iLoginAgainForNextTest()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LogOutScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As an User\n  I want to success login\n  So that I can see my dashboard page",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/1.Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-04T05:59:27.587Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6975535500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "See Patients Today Detail And Close Page Scenario",
+        "description": "",
+        "id": "dashboard;see-patients-today-detail-and-close-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 284188700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 120079700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am at the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmAtTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 214142400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click \u003e icon on Patients Today list",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iClickIconOnPatientsTodayList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1232822000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on update patient data page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmOnUpdatePatientDataPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 182121500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click \u003c icon on Update Patient Data form",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iClickIconOnUpdatePatientDataForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeePatientsTodayDetailAndClosePageScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:59:36.643Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8411500800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "See More Patients Today Page And Close Page Scenario",
+        "description": "",
+        "id": "dashboard;see-more-patients-today-page-and-close-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 284189600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 130086800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I am at the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmAtTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 202472200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click see more \u003e button on Patients Today",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iClickSeeMoreButtonOnPatientsToday()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 918613200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on patient page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmOnPatientPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 164109500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click \u003c icon on Patient Page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iClickIconOnPatientPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeeMorePatientsTodayPageAndClosePageScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:59:46.787Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8213983600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "See Finished Consultation Detail And Close Page Scenario",
+        "description": "",
+        "id": "dashboard;see-finished-consultation-detail-and-close-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 278182000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 114074700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I am at the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmAtTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1026500700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click \u003e icon on Finished Patients list",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iClickIconOnFinishedPatientsList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 141096100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I am on Finished Patients Data page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmOnFinishedPatientsDataPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 984657800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click \u003c icon on Finished Patients Data form",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iClickIconOnFinishedPatientsDataForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeeFinishedConsultationDetailAndClosePageScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T05:59:57.580Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7246919700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "See More Finished Consultation Page And Close Page Scenario",
+        "description": "",
+        "id": "dashboard;see-more-finished-consultation-page-and-close-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 280186000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 113075700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am at the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmAtTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 233154000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click see more \u003e button on Finished Consultation",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iClickSeeMoreButtonOnFinishedConsultation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 918861800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I am on Finished Consultation Patient page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmOnFinishedConsultationPatientPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1036479200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click \u003c icon on Finished Consultation Patient Page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iClickIconOnFinishedConsultationPatientPage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeeMoreFinishedConsultationPageAndClosePageScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T06:00:07.446Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7111163100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Validate Date On Dashboard Page Scenario",
+        "description": "",
+        "id": "dashboard;validate-date-on-dashboard-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 243159300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 89059200,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I am at the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iAmAtTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 99066300,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I validate date on dashboard page is correct",
+            "match": {
+              "location": "project.mobile.steps.DashboardSteps.iValidateDateOnDashboardPageIsCorrect()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ValidateDateOnDashboardPageScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Dashboard",
+    "description": "  As an User\n  I want to see dashboard page\n  So that I can use my dashboard page feature",
+    "id": "dashboard",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/2.Dashboard.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-04T06:00:15.020Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7519860800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Tap The Back Icon On The Patient Page Scenario",
+        "description": "",
+        "id": "patient;tap-the-back-icon-on-the-patient-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 553365900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 130086700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iAmOnTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154101400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click the sidebar button",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iClickTheSidebarButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2256139600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click patient sidebar menu",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iClickPatientSidebarMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 982656000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click back button on patient page",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iClickBackButtonOnPatientPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 137094400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am back to Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iAmBackToDashboardPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TapTheBackIconOnThePatientPageScenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T06:00:26.794Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7954777400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.before()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "See Update Patient Data Page Scenario",
+        "description": "",
+        "id": "patient;see-update-patient-data-page-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 274181100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "project.mobile.hooks.AndroidDriverHook.afterDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 112074700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am on the Dashboard page",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iAmOnTheDashboardPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1088389900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click the sidebar button",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iClickTheSidebarButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1309871000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click patient sidebar menu",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iClickPatientSidebarMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5733260600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I tap the \u003e icon on Patient Page patient",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iTapTheIconOnPatientPagePatient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2427554800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am on the Update Patient Data page",
+            "match": {
+              "location": "project.mobile.steps.PatientSteps.iAmOnTheUpdatePatientDataPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeeUpdatePatientDataPageScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Patient",
+    "description": "  As an User\n  I want to see Patient page\n  So that I can see Patient list",
+    "id": "patient",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/3.Patient.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-04T06:00:45.731Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7266658600,
               "status": "passed"
             },
             "match": {
@@ -22,7 +1451,7 @@
         "after": [
           {
             "result": {
-              "duration": 311251100,
+              "duration": 286187800,
               "status": "passed"
             },
             "match": {
@@ -35,7 +1464,7 @@
         "steps": [
           {
             "result": {
-              "duration": 247406500,
+              "duration": 117080600,
               "status": "passed"
             },
             "line": 9,
@@ -47,7 +1476,7 @@
           },
           {
             "result": {
-              "duration": 1311212800,
+              "duration": 992659100,
               "status": "passed"
             },
             "line": 10,
@@ -59,7 +1488,7 @@
           },
           {
             "result": {
-              "duration": 267352500,
+              "duration": 989658600,
               "status": "passed"
             },
             "line": 11,
@@ -77,7 +1506,7 @@
           },
           {
             "result": {
-              "duration": 921663700,
+              "duration": 162641800,
               "status": "passed"
             },
             "line": 12,
@@ -101,11 +1530,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-03T16:34:10.646Z",
+        "start_timestamp": "2022-07-04T06:00:55.586Z",
         "before": [
           {
             "result": {
-              "duration": 7336735600,
+              "duration": 7103663400,
               "status": "passed"
             },
             "match": {
@@ -120,7 +1549,7 @@
         "after": [
           {
             "result": {
-              "duration": 305326100,
+              "duration": 355911400,
               "status": "passed"
             },
             "match": {
@@ -133,7 +1562,7 @@
         "steps": [
           {
             "result": {
-              "duration": 210140200,
+              "duration": 123082300,
               "status": "passed"
             },
             "line": 9,
@@ -145,7 +1574,7 @@
           },
           {
             "result": {
-              "duration": 995665400,
+              "duration": 962651500,
               "status": "passed"
             },
             "line": 10,
@@ -157,7 +1586,7 @@
           },
           {
             "result": {
-              "duration": 221145900,
+              "duration": 210139800,
               "status": "passed"
             },
             "line": 11,
@@ -175,7 +1604,7 @@
           },
           {
             "result": {
-              "duration": 2620424200,
+              "duration": 1882147900,
               "status": "passed"
             },
             "line": 12,

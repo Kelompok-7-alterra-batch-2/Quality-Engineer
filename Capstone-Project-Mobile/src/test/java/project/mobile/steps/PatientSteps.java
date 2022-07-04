@@ -37,4 +37,63 @@ public class PatientSteps {
         dashboardPage.verifyDashboardPageDisplayed();
     }
 
+    @And("I tap the > icon on Patient Page patient")
+    public void iTapTheIconOnPatientPagePatient() {
+        patientPage.clickPatientDetailButton();
+    }
+
+    @Then("I am on the Update Patient Data page")
+    public void iAmOnTheUpdatePatientDataPage() {
+        patientPage.verifyUpdatePatientDataPageDisplayed();
+        patientPage.clickBackIcon();
+        patientPage.clickBackIcon();
+    }
+
+    @When("I input {string} Diagnosis")
+    public void iInputDiagnosis(String diagnosis) throws InterruptedException {
+        patientPage.inputDiagnosis(diagnosis);
+    }
+
+    @And("I input {string} Prescription")
+    public void iInputPrescription(String prescription) throws InterruptedException {
+        patientPage.inputPrescription(prescription);
+    }
+
+    @And("I tap submit button")
+    public void iTapSubmitButton() {
+        patientPage.tapSubmitButton();
+    }
+
+    @And("I tap {string} submit button")
+    public void iTapSubmitButton(String submit) {
+        switch (submit) {
+            case "Confirm":
+                patientPage.tapSubmitButton();
+                patientPage.tapYesButton();
+                break;
+            case "Cancel":
+                patientPage.tapSubmitButton();
+                patientPage.tapNoButton();
+                break;
+            case "Warning":
+                patientPage.tapSubmitButton();
+                patientPage.tapOKWarningButton();
+                break;
+        }
+    }
+
+    @Then("I get update patient {string}")
+    public void iGetUpdatePatient(String result) {
+        switch (result) {
+            case "Finished Consultation":
+                patientPage.waitVerifyPatientPageDisplayed();
+                patientPage.clickBackIcon();
+                break;
+            case "Update Patient Data":
+                patientPage.verifyUpdatePatientDataPageDisplayed();
+                patientPage.clickBackIcon();
+                patientPage.clickBackIcon();
+                break;
+        }
+    }
 }
