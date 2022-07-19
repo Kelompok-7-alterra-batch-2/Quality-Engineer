@@ -47,6 +47,7 @@ public class PatientSteps {
         patientPage.verifyUpdatePatientDataPageDisplayed();
         patientPage.clickBackIcon();
         patientPage.clickBackIcon();
+        patientPage.clickDashboardButton();
     }
 
     @When("I input {string} Diagnosis")
@@ -96,4 +97,24 @@ public class PatientSteps {
                 break;
         }
     }
+
+    @And("I tap the search field at Patient Page")
+    public void iTapTheSearchFieldAtPatientPage() {
+        patientPage.clickSearchField();
+    }
+
+    @And("I input patient name and tap the search button")
+    public void iInputPatientNameAndTapTheSearchButton() {
+        patientPage.searchPatient();
+    }
+
+    @Then("I get result inputed patient name appear")
+    public void iGetResultInputedPatientNameAppear() {
+        patientPage.verifyPatientNameDisplayed();
+    }
+
+//    @And("I scroll to {string}")
+//    public void iScrollTo(String bottom) {
+//        patientPage.scrollAndClick(bottom);
+//    }
 }

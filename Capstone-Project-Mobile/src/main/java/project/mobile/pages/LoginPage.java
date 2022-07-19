@@ -55,6 +55,22 @@ public class LoginPage extends BasePageObject {
         return MobileBy.AccessibilityId("Please enter your password");
     }
 
+    By userNotFound(){
+        return MobileBy.AccessibilityId("User Not Found!");
+    }
+
+    By onlyDoctor(){
+        return MobileBy.AccessibilityId("Only Doctor can use tablet version!");
+    }
+
+    By userNotFoundOKButton(){
+        return MobileBy.AccessibilityId("OK");
+    }
+
+    By onlyDoctorOKButton(){
+        return MobileBy.AccessibilityId("OK");
+    }
+
     public void verifySignInButtonDisplayed(){
         Assertions.assertTrue(find(signInButton()).isDisplayed());
     }
@@ -101,16 +117,28 @@ public class LoginPage extends BasePageObject {
         Assertions.assertTrue(find(nullPassword()).isDisplayed(), result);
     }
 
+    public void getErrorUserNotFound(String result) throws InterruptedException {
+        Thread.sleep(3000);
+        Assertions.assertTrue(find(userNotFound()).isDisplayed(), result);
+        click(userNotFoundOKButton());
+    }
+
+    public void getErrorOnlyDoctor(String result) throws InterruptedException {
+        Thread.sleep(3000);
+        Assertions.assertTrue(find(onlyDoctor()).isDisplayed(), result);
+        click(onlyDoctorOKButton());
+    }
+
     public void loginAgain() throws InterruptedException {
         click(fieldEmailLoginAgain());
         Thread.sleep(3000);
         clear(fieldEmailLoginAgain());
-        sendKeys(fieldEmailLoginAgain(), "test@gmail.com");
+        sendKeys(fieldEmailLoginAgain(), "oscarok@gmail.com");
         click(showAndHidePasswordIconAgain());
         click(fieldPasswordLoginAgain());
         Thread.sleep(3000);
         clear(fieldPasswordLoginAgain());
-        sendKeys(fieldPasswordLoginAgain(), "Test@123");
+        sendKeys(fieldPasswordLoginAgain(), "Oscar123!");
         click(showAndHidePasswordIconAgain());
         click(signInButton());
     }

@@ -53,6 +53,12 @@ public class LoginSteps {
             case "Please enter your password":
                 loginPage.getErrorNullPassword(result);
                 break;
+            case "User Not Found!":
+                loginPage.getErrorUserNotFound(result);
+                break;
+            case "Only Doctor can use tablet version!":
+                loginPage.getErrorOnlyDoctor(result);
+                break;
         }
     }
 

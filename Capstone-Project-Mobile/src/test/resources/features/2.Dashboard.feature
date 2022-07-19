@@ -35,8 +35,20 @@ Feature: Dashboard
     Then I am on Finished Consultation Patient page
     And I click < icon on Finished Consultation Patient Page
 
+#mvn clean verify -Dtags="@ValidateDoctorNameOnDashboardPageScenario"
+  @ValidateDoctorNameOnDashboardPageScenario
+  Scenario: Validate Doctor Name On Dashboard Page Scenario
+    Given I am at the Dashboard page
+    Then I validate doctor name on dashboard page is correct
+
 #mvn clean verify -Dtags="@ValidateDateOnDashboardPageScenario"
   @ValidateDateOnDashboardPageScenario
   Scenario: Validate Date On Dashboard Page Scenario
     Given I am at the Dashboard page
     Then I validate date on dashboard page is correct
+
+#mvn clean verify -Dtags="@ValidateTotalAppointmentsOnDashboardPageScenario"
+  @ValidateTotalAppointmentsOnDashboardPageScenario
+  Scenario: Validate Total Appointments On Dashboard Page Scenario
+    Given I am at the Dashboard page
+    Then I validate total appointments on dashboard page is correct

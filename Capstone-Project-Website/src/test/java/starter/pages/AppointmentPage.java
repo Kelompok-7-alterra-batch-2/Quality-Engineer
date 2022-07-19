@@ -16,7 +16,7 @@ public class AppointmentPage extends PageObject {
     }
 
     private By addNewAppointmentButton(){
-        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/div[1]/button[1]");
+        return By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/button[1]");
     }
 
     private By yesButton(){
@@ -24,31 +24,39 @@ public class AppointmentPage extends PageObject {
     }
 
     private By nameField(){
-        return By.xpath("//body/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/input[1]");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]");
+    }
+
+    private By searchButton(){
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]");
+    }
+
+    private By patientName(){
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/div[1]");
     }
 
     private By departmentDropdownButton(){
-        return By.id("mui-component-select-department");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[4]/div[1]/div[1]");
     }
 
     private By departmentOptionButton(){
-        return By.xpath("//body/div[@id='menu-department']/div[3]/ul[1]/li[2]");
+        return By.xpath("//body/div[@id='menu-department_id']/div[3]/ul[1]/li[2]");
     }
 
     private By appointmentDateField(){
-        return By.xpath("//body/div[2]/div[3]/div[2]/div[3]/div[1]/div[1]/input[1]");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/input[1]");
     }
 
     private By appointmentTimeField(){
-        return By.xpath("//body/div[2]/div[3]/div[2]/div[4]/div[1]/div[1]/input[1]");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[3]/div[1]/div[1]/input[1]");
     }
 
     private By doctorDropdownButton(){
-        return By.id("mui-component-select-doctor");
+        return By.xpath("//body/div[2]/div[3]/div[2]/div[5]/div[1]/div[1]");
     }
 
     private By doctorOptionButton(){
-        return By.xpath("//body/div[@id='menu-doctor']/div[3]/ul[1]/li[2]");
+        return By.xpath("///body/div[@id='menu-doctor_id']/div[3]/ul[1]/li[2]");
     }
 
     private By AppointmentReasonField(){
@@ -61,6 +69,30 @@ public class AppointmentPage extends PageObject {
 
     private By validateSuccessAppointment(){
         return By.id("modal-success-description");
+    }
+
+    private By nullName(){
+        return By.xpath("//p[contains(text(),'Field Patient is empty or not search yet')]");
+    }
+
+    private By nullDate(){
+        return By.xpath("//p[contains(text(),'Field Appointment Date is empty')]");
+    }
+
+    private By nullTime(){
+        return By.xpath("//p[contains(text(),'Field Appointment Time is empty')]");
+    }
+
+    private By nullDepartment(){
+        return By.xpath("//p[contains(text(),'Field Department is empty')]");
+    }
+
+    private By nullDoctor(){
+        return By.xpath("//p[contains(text(),'Field Doctor is empty')]");
+    }
+
+    private By nullReason(){
+        return By.xpath("//p[contains(text(),'Field Appointment Reason is empty')]");
     }
 
     private By xIcon(){
@@ -184,8 +216,10 @@ public class AppointmentPage extends PageObject {
     }
 
     @Step
-    public void inputName(){
-        $(nameField()).type("CJ");
+    public void inputName(String name){
+        $(nameField()).type(name);
+        $(searchButton()).click();
+        $(patientName()).click();
     }
 
     @Step
@@ -203,13 +237,25 @@ public class AppointmentPage extends PageObject {
     }
 
     @Step
-    public void inputAppointmentDate(){
-        $(appointmentDateField()).type("06152022");
+    public void inputAppointmentDate(String date){
+        $(appointmentDateField()).type(date);
     }
 
     @Step
-    public void inputAppointmentTime(){
-        $(appointmentTimeField()).type("0222PM");
+    public void nullAppointmentDate(){
+        $(appointmentDateField()).doubleClick();
+        $(appointmentDateField()).clear();
+    }
+
+    @Step
+    public void inputAppointmentTime(String time){
+        $(appointmentTimeField()).type(time);
+    }
+
+    @Step
+    public void nullAppointmentTime(){
+        $(appointmentTimeField()).doubleClick();
+        $(appointmentTimeField()).clear();
     }
 
     @Step
@@ -227,8 +273,24 @@ public class AppointmentPage extends PageObject {
     }
 
     @Step
-    public void inputAppointmentReason(){
-        $(AppointmentReasonField()).type("Smoke to much weed");
+    public void inputAppointmentReason(String reason){
+        $(AppointmentReasonField()).type(reason);
+    }
+
+    @Step
+    public void submitNullDate(){
+        $(appointmentDateField()).doubleClick();
+        $(appointmentDateField()).clear();
+        to(submitButton());
+        $(submitButton()).click();
+    }
+
+    @Step
+    public void submitNullTime(){
+        $(appointmentTimeField()).doubleClick();
+        $(appointmentTimeField()).clear();
+        to(submitButton());
+        $(submitButton()).click();
     }
 
     @Step
@@ -238,8 +300,45 @@ public class AppointmentPage extends PageObject {
     }
 
     @Step
-    public void newAppointmentAdded(){
+    public void newAppointmentAdded() throws InterruptedException {
+        Thread.sleep(5000);
         $(validateSuccessAppointment()).isDisplayed();
+    }
+
+    @Step
+    public void nullNameError() {
+        to(nullName());
+        $(nullName()).isDisplayed();
+    }
+
+    @Step
+    public void nullDateError() {
+        to(nullDate());
+        $(nullDate()).isDisplayed();
+    }
+
+    @Step
+    public void nullTimeError() {
+        to(nullTime());
+        $(nullTime()).isDisplayed();
+    }
+
+    @Step
+    public void nullDepartmentError() {
+        to(nullDepartment());
+        $(nullDepartment()).isDisplayed();
+    }
+
+    @Step
+    public void nullDoctorError() {
+        to(nullDoctor());
+        $(nullDoctor()).isDisplayed();
+    }
+
+    @Step
+    public void nullReasonError() {
+        to(nullReason());
+        $(nullReason()).isDisplayed();
     }
 
     @Step
@@ -393,5 +492,45 @@ public class AppointmentPage extends PageObject {
     public void validateGynecologyAppointment(){
         $(gynecologyTitle()).waitUntilVisible();
         $(gynecologyTitle()).isDisplayed();
+    }
+
+    @Step
+    public void inputValidDataDateChange() throws InterruptedException {
+        $(nameField()).type("Aldi");
+
+        $(searchButton()).click();
+
+        $(patientName()).waitUntilVisible();
+
+        $(patientName()).click();
+
+        $(appointmentTimeField()).type("0222PM");
+
+        to(departmentDropdownButton());
+        $(departmentDropdownButton()).click();
+
+        to(departmentOptionButton());
+        $(departmentOptionButton()).click();
+
+        to(doctorDropdownButton());
+        $(doctorDropdownButton()).click();
+
+        Thread.sleep(3000);
+        to(doctorOptionButton());
+        $(doctorOptionButton()).click();
+
+        $(AppointmentReasonField()).type("Demam");
+
+        to(appointmentDateField());
+        $(appointmentDateField()).type("01010001");
+
+        to(submitButton());
+        $(submitButton()).click();
+    }
+
+    @Step
+    public void validateResultWithDateChange(){
+//        $(validateSuccessAppointment()).waitUntilVisible();
+        $(validateSuccessAppointment()).isDisplayed();
     }
 }

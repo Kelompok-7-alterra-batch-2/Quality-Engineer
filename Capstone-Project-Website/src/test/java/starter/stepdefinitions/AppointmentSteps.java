@@ -26,22 +26,96 @@ public class AppointmentSteps {
         appointmentPage.clickYesButton();
     }
 
-    @And("I input valid data Appointment and click submit")
-    public void iInputValidDataAppointmentAndClickSubmit() {
-        appointmentPage.inputName();
-        appointmentPage.clickDepartmentDropdownButton();
-        appointmentPage.clickDepartmentOptionButton();
-        appointmentPage.inputAppointmentDate();
-        appointmentPage.inputAppointmentTime();
-        appointmentPage.clickDoctorDropdownButton();
-        appointmentPage.clickDoctorOptionButton();
-        appointmentPage.inputAppointmentReason();
-        appointmentPage.clickSubmitButton();
+    @And("I input {string}, {string}, {string}, {string}, {string}, {string}, and click {string}")
+    public void iInputValidDataAppointmentAndClickSubmit(String name, String date, String time, String department, String doctor, String reason, String submit) {
+        switch (name) {
+            case "Aldi":
+                appointmentPage.inputName(name);
+                break;
+            case "null":
+
+                break;
+        }
+        switch (date) {
+            case "today":
+//                appointmentPage.inputAppointmentDate(date);
+                break;
+            case "null":
+                appointmentPage.nullAppointmentDate();
+                break;
+        }
+        switch (time) {
+            case "0222PM":
+                appointmentPage.inputAppointmentTime(time);
+                break;
+            case "null":
+                appointmentPage.nullAppointmentTime();
+                break;
+        }
+        switch (department) {
+            case "general":
+                appointmentPage.clickDepartmentDropdownButton();
+                appointmentPage.clickDepartmentOptionButton();
+                break;
+            case "null":
+
+                break;
+        }
+        switch (doctor) {
+            case "Michael":
+                appointmentPage.clickDoctorDropdownButton();
+                appointmentPage.clickDoctorOptionButton();
+                break;
+            case "null":
+
+                break;
+        }
+        switch (reason) {
+            case "demam":
+                appointmentPage.inputAppointmentReason(reason);
+                break;
+            case "null":
+
+                break;
+        }
+        switch (submit) {
+            case "date":
+                appointmentPage.submitNullDate();
+                break;
+            case "time":
+                appointmentPage.submitNullTime();
+                break;
+            case "submit":
+                appointmentPage.clickSubmitButton();
+                break;
+        }
     }
 
-    @Then("I get New Appointment has been added result")
-    public void iGetNewAppointmentHasBeenAddedResult() {
-        appointmentPage.newAppointmentAdded();
+    @Then("I get New Appointment has been added {string}")
+    public void iGetNewAppointmentHasBeenAddedResult(String result) throws InterruptedException {
+        switch (result) {
+            case "New Appointment has been added":
+                appointmentPage.newAppointmentAdded();
+                break;
+            case "Field Patient is empty or not search yet":
+                appointmentPage.nullNameError();
+                break;
+            case "Field Appointment Date is empty":
+                appointmentPage.nullDateError();
+                break;
+            case "Field Appointment Time is empty":
+                appointmentPage.nullTimeError();
+                break;
+            case "Field Department is empty":
+                appointmentPage.nullDepartmentError();
+                break;
+            case "Field Doctor is empty":
+                appointmentPage.nullDoctorError();
+                break;
+            case "Field Appointment Reason is empty":
+                appointmentPage.nullReasonError();
+                break;
+        }
     }
 
     @And("I click x icon")
@@ -168,5 +242,15 @@ public class AppointmentSteps {
     @Then("I validate Today Appointment only show Gynecology Department Appointment")
     public void iValidateTodayAppointmentOnlyShowGynecologyDepartmentAppointment() {
         appointmentPage.validateGynecologyAppointment();
+    }
+
+    @And("I input valid data then change date to invalid date and click submit")
+    public void iInputValidDataThenChangeDateToInvalidDateAndClickSubmit() throws InterruptedException {
+        appointmentPage.inputValidDataDateChange();
+    }
+
+    @Then("I get result with date change to 01-01-1920")
+    public void iGetResultWithDateChangeTo() {
+        appointmentPage.validateResultWithDateChange();
     }
 }

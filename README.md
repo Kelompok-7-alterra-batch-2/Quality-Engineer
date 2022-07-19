@@ -4,7 +4,7 @@
 
 > Backup Target > Testing Capstone Website > target > site > serenity > index.html
 
-# SS Serenity BDD Report Mobile (Last Update 4-7-2022)
+# SS Serenity BDD Report Mobile (Last Update 19-7-2022)
 
 Log in Scenario 1
 ![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Log%20in%20Scenario%201.png)
@@ -20,6 +20,9 @@ Log in Scenario 4
 
 Log Out Scenario
 ![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Log%20Out%20Scenario.png)
+
+Search Patient By Patient Name Scenario
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Search%20Patient%20By%20Patient%20Name%20Scenario.png)
 
 See Finished Consultation Detail And Close Page Scenario
 ![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/See%20Finished%20Consultation%20Detail%20And%20Close%20Page%20Scenario.png)
@@ -47,6 +50,12 @@ Tap The Back Icon On The Patient Page Scenario
 
 Validate Date On Dashboard Page Scenario
 ![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Validate%20Date%20On%20Dashboard%20Page%20Scenario.png)
+
+Validate Doctor Name On Dashboard Page Scenario
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Validate%20Doctor%20Name%20On%20Dashboard%20Page%20Scenario.png)
+
+Validate Total Appointments On Dashboard Page Scenario
+![-](./Backup%20Target/Testing%20Capstone%20Mobile/Report/Validate%20Total%20Appointments%20On%20Dashboard%20Page%20Scenario.png)
 
 # SS Serenity BDD Report Website (Last Update 21-6-2022)
 

@@ -78,8 +78,18 @@ public class DashboardSteps {
         dashboardPage.clickBackIcon();
     }
 
+    @Then("I validate doctor name on dashboard page is correct")
+    public void iValidateDoctorNameOnDashboardPageIsCorrect() {
+        dashboardPage.verifyDoctorNameOnDashboardPageIsCorrect();
+    }
+
     @Then("I validate date on dashboard page is correct")
     public void iValidateDateOnDashboardPageIsCorrect() {
         dashboardPage.verifyDateOnDashboardPageIsCorrect();
+    }
+
+    @Then("I validate total appointments on dashboard page is correct")
+    public void iValidateTotalAppointmentsOnDashboardPageIsCorrect() {
+        dashboardPage.verifyTotalAppointmentOnDashboardPageIsCorrect();
     }
 }

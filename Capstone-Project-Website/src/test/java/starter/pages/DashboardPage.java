@@ -36,6 +36,18 @@ public class DashboardPage extends PageObject {
         return By.xpath("//div[contains(text(),'Doctor')]");
     }
 
+    private By date(){
+        return By.xpath("//h3[contains(text(),'July 11, 2022')]");
+    }
+
+    private By patientsButton(){
+        return By.xpath("//p[contains(text(),'Patients')]");
+    }
+
+    private By patientHeader(){
+        return By.xpath("//h3[contains(text(),'Patient')]");
+    }
+
     @Step
     public void openUrl(){
         open();
@@ -80,4 +92,19 @@ public class DashboardPage extends PageObject {
         $(doctorSidebarButton()).click();
     }
 
+    @Step
+    public void validateDateOnDashboardPage(){
+        $(date()).isDisplayed();
+    }
+
+    @Step
+    public void clickPatientButton(){
+        to(patientsButton());
+        $(patientsButton()).click();
+    }
+
+    @Step
+    public void validateOnPatientPage(){
+        $(patientHeader()).isDisplayed();
+    }
 }

@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Patient","type":"feature","href":"1e00370c9b2c609354fcc9fd880dce0f673ee970d75d7484a6a9f2adab0e28a7.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e2 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Patient","type":"feature","href":"1e00370c9b2c609354fcc9fd880dce0f673ee970d75d7484a6a9f2adab0e28a7.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e3 scenarios\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -217,7 +217,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-07-2022 13:00</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-07-2022 14:01</span>
     <br style="clear:left"/>
 </div>
 
@@ -318,6 +318,35 @@ So that I can see Patient list
                                                         </tr>
                                                         <tr>
                                                             <td style="width:95%;" class="toc-title">
+                                                                <a href="#8adb811554dec17e21a22bb42931995b65a0cafbf0a0f31b18f533f099305593" title="View scenario details" >Search patient by patient name scenario</a>
+
+
+                                                            </td>
+                                                            <td style="width:5%;">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                               href="28a402acbf505cf907b15f0e5a4b98ca2ceb85ed3b9d756e28a5960f91a91459.html"
+                                                                               title="View test results">
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                            </a>
+
+                                                                        
+                                                                        </td>
+                                                                        <td>
+                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                               href="28a402acbf505cf907b15f0e5a4b98ca2ceb85ed3b9d756e28a5960f91a91459.html"
+                                                                               title="View test results">
+                                                                                <i class="fas fa-search-plus"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:95%;" class="toc-title">
                                                                 <a href="#0565308912316ff2fac7fdd2e76b0db3c72c5c6b137ffa0b827106259b3ad4f5" title="View scenario details" >See update patient data page scenario</a>
 
 
@@ -375,6 +404,31 @@ So that I can see Patient list
                                                     </div>
                                                 </div>
 
+                                                <div class="scenario-docs card" id="8adb811554dec17e21a22bb42931995b65a0cafbf0a0f31b18f533f099305593">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                <a href="28a402acbf505cf907b15f0e5a4b98ca2ceb85ed3b9d756e28a5960f91a91459.html" title="View test results">Search Patient By Patient Name Scenario</a>
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given I am on the Dashboard page</p>
+                                                            <p>When I click the sidebar button</p>
+                                                            <p>And I click patient sidebar menu</p>
+                                                            <p>And I tap the search field at Patient Page</p>
+                                                            <p>And I input patient name and tap the search button</p>
+                                                            <p>Then I get result inputed patient name appear</p>
+                                                        <div class="examples">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 <div class="scenario-docs card" id="0565308912316ff2fac7fdd2e76b0db3c72c5c6b137ffa0b827106259b3ad4f5">
                                                     <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                         <div>
@@ -416,7 +470,7 @@ So that I can see Patient list
                                                 var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 3}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -457,7 +511,7 @@ So that I can see Patient list
                                                                         <a href="baa684bc1059a50ecb6df8ca25d992c1096c128da9e1b03074d05bf20ce0da86.html"><i
                                                                                 class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                <td class="automated-stats">2</td>
+                                                <td class="automated-stats">3</td>
                                                 <td class="automated-stats">100%</td>
                                             </tr>
                                             <tr>
@@ -512,7 +566,7 @@ So that I can see Patient list
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">2</td>
+                                                <td class="automated-stats">3</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -534,11 +588,11 @@ So that I can see Patient list
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>30s</td>
-                                                        <td>11s</td>
-                                                        <td>11s</td>
-                                                        <td>18s</td>
-                                                        <td>15s</td>
+                                                        <td>44s</td>
+                                                        <td>28s</td>
+                                                        <td>12s</td>
+                                                        <td>16s</td>
+                                                        <td>14s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -566,6 +620,18 @@ So that I can see Patient list
                                                             <a href="e2d8df8c0950a8a1170913a67fa5ea0781fe7a5e34794727fc70784730a2c2e6.html">Tap The Back Icon On The Patient Page Scenario</a>
                                                     </td>
                                                     <td>5</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="28a402acbf505cf907b15f0e5a4b98ca2ceb85ed3b9d756e28a5960f91a91459.html">Search Patient By Patient Name Scenario</a>
+                                                    </td>
+                                                    <td>6</td>
                                                     <td> </td>
                                                     <td> </td>
                                                     <td>

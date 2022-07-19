@@ -19,8 +19,16 @@ public class DashboardPage extends BasePageObject {
         return MobileBy.AccessibilityId("Finished Consultation Patient");
     }
 
+    By dashboardDoctorName(){
+        return MobileBy.AccessibilityId("Dr. Oscar Oktorian");
+    }
+
     By dashboardDate(){
-        return MobileBy.AccessibilityId("July, 4 2022");
+        return MobileBy.AccessibilityId("July, 19 2022");
+    }
+
+    By dashboardTotalAppointment(){
+        return MobileBy.AccessibilityId("2 Appointments");
     }
 
     By finishedPatientPage(){
@@ -115,7 +123,15 @@ public class DashboardPage extends BasePageObject {
         Assertions.assertTrue(find(finishedConsultationPatientPage()).isDisplayed());
     }
 
+    public void verifyDoctorNameOnDashboardPageIsCorrect(){
+        Assertions.assertTrue(find(dashboardDoctorName()).isDisplayed());
+    }
+
     public void verifyDateOnDashboardPageIsCorrect(){
         Assertions.assertTrue(find(dashboardDate()).isDisplayed());
+    }
+
+    public void verifyTotalAppointmentOnDashboardPageIsCorrect(){
+        Assertions.assertTrue(find(dashboardTotalAppointment()).isDisplayed());
     }
 }

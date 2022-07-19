@@ -36,4 +36,19 @@ public class DashboardSteps {
     public void iGetRedirectToDoctorPage() {
         dashboardPage.validateOnDoctorPage();
     }
+
+    @Then("I validate date on dashboard page")
+    public void iValidateDateOnDashboardPage() {
+        dashboardPage.validateDateOnDashboardPage();
+    }
+
+    @When("I click dashboard patients button")
+    public void iClickDashboardPatientsButton() {
+        dashboardPage.clickPatientButton();
+    }
+
+    @Then("I get redirect to patient page")
+    public void iGetRedirectToPatientPage() {
+        dashboardPage.validateOnPatientPage();
+    }
 }

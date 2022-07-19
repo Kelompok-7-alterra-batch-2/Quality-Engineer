@@ -12,13 +12,15 @@ Feature: Login
     And I tap hide password icon and tap sign in button
     Then I get the "<result>"
     Examples:
-      |email|password|result|
-      |test          |Test@123|Please enter a valid email address|
-      |test@gmail.com|test1234|Please enter valid password!|
-      |test@gmail.com|Test    |Password must be at least 8 characters in length|
-      |              |Test@123|Please enter your email|
-      |test@gmail.com|        |Please enter your password|
-      |test@gmail.com|Test@123|dashboard page|
+      |email            |password |result|
+      |oscar            |Oscar123!|Please enter a valid email address|
+      |oscarok@gmail.com|test1234 |Please enter valid password!|
+      |oscarok@gmail.com|Oscar    |Password must be at least 8 characters in length|
+      |                 |Oscar123!|Please enter your email|
+      |oscarok@gmail.com|         |Please enter your password|
+      |mail@gmail.com   |Email123!|User Not Found!|
+      |stone@yahoo.com  |Stone1234!|Only Doctor can use tablet version!|
+      |oscarok@gmail.com|Oscar123!|dashboard page|
 
 #mvn clean verify -Dtags="@LogOutScenario"
   @LogOutScenario
